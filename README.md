@@ -8,7 +8,10 @@ contract. This is not a new logic or a validated measure of technology attainmen
 
 ## Install the software
 
-Python 3.10 or newer is declared. From this checkout:
+Python 3.10 or newer is declared. Isolated local checks passed on 3.10.22,
+3.12.3 and 3.12.14; the GitHub-hosted Ubuntu 24.04 check passed on 3.12.15.
+These checks replay saved observations and do not rerun the backend probes.
+Python 3.11, 3.13, 3.14 and other operating systems were not tested. From this checkout:
 
 ```sh
 python -m pip install ./software

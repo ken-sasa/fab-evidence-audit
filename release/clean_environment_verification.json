@@ -1,0 +1,1003 @@
+{
+  "started_at_utc": "2026-10-24T05:48:59.874868+00:00",
+  "host": {
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.3 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.3 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n"
+  },
+  "scope": "Local new virtual environments on one existing Linux host. This is not another-host or independent-group replication. Replays and walkthroughs reuse archived tasks and observations and run no new SQLite or decimal measurements.",
+  "runtime_dependencies": [],
+  "container_tools_on_path": {
+    "docker": null,
+    "podman": null
+  },
+  "uv_version": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/uv",
+      "--version"
+    ],
+    "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+    "exit_code": 0,
+    "stdout": "uv 0.13.4 (x86_64-unknown-linux-gnu)\n",
+    "stderr": ""
+  },
+  "artifacts": {
+    "release/dist/fab_evidence_audit-0.1.1-py3-none-any.whl": "109ef0d7bed68467bae2cc2f9e83d3e7c61065d5cb6105543aad2b5dd1077a27",
+    "release/dist/fab_evidence_audit-0.1.1.tar.gz": "cf697da6917f24db56593c8ce9223735a5fe60eac3e6d5d0dfc155b15b188e9d"
+  },
+  "validation_scripts": {
+    "release/verify_distribution.py": "842c433e0bfdfeaab4c19764688b30aff092be112089940bbe5d8801f7291ace",
+    "release/run_sqlite_walkthrough.py": "5b1c38d3a9833b7bafc6ceb19a5b3203d5d1eea735d919ef4d054d24db7742b0"
+  },
+  "cpython_3_10_source": {
+    "url": "https://www.python.org/ftp/python/3.10.22/Python-3.10.22.tar.xz",
+    "release_url": "https://www.python.org/downloads/release/python-31022/",
+    "sha256": "c61fe9b1a1a7ec2a0b0388e664187c378a5325a89e3606d220abf5bdfccb2543",
+    "official_release_sha256_matched": true,
+    "configure": "./Python-3.10.22/configure --prefix=<local validation prefix> --with-ensurepip=install",
+    "build": "make -j4; make install",
+    "optimized_pgo_build": false,
+    "build_environment_limit": "Host lacks libsqlite3-dev; this local 3.10 build has no _sqlite3 module. No SQLite runtime operations are part of these package checks. ssl, decimal, venv and unittest were imported successfully.",
+    "lifecycle_note": "3.10.22 is the final 3.10 release; the branch reached end of life on 2026-10-01. Compatibility minimum is distinct from a recommended supported runtime."
+  },
+  "environments": [
+    {
+      "label": "cpython_3_10_22_wheel",
+      "artifact": "wheel",
+      "before": {
+        "python": "3.10.22 (main, Oct 23 2026, 22:45:52) [GCC 13.3.0]",
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/bin/python",
+        "prefix": "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22",
+        "base_prefix": "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22",
+        "isolated_flag": 1,
+        "user_site_enabled": false,
+        "sys_path": [
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python310.zip",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python3.10",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python3.10/lib-dynload",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/lib/python3.10/site-packages"
+        ],
+        "purelib": "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/lib/python3.10/site-packages",
+        "distributions": []
+      },
+      "pyvenv_cfg": "home = /workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/bin\nimplementation = CPython\nuv = 0.13.4\nversion_info = 3.10.22\ninclude-system-site-packages = false\n",
+      "installation": {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/uv",
+          "pip",
+          "install",
+          "--python",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/bin/python",
+          "--offline",
+          "--no-deps",
+          "--no-index",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/dist/fab_evidence_audit-0.1.1-py3-none-any.whl"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "Using Python 3.10.22 environment at: venv-cpython-3.10.22\nResolved 1 package in 4ms\nPrepared 1 package in 5ms\nInstalled 1 package in 2ms\n + fab-evidence-audit==0.1.1 (from file:///workspace/scratch/08f9419d4225/fab_logic_study/release/dist/fab_evidence_audit-0.1.1-py3-none-any.whl)\n"
+      },
+      "after": {
+        "python": "3.10.22 (main, Oct 23 2026, 22:45:52) [GCC 13.3.0]",
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/bin/python",
+        "prefix": "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22",
+        "base_prefix": "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22",
+        "isolated_flag": 1,
+        "user_site_enabled": false,
+        "sys_path": [
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python310.zip",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python3.10",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python3.10/lib-dynload",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/lib/python3.10/site-packages"
+        ],
+        "purelib": "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/lib/python3.10/site-packages",
+        "distributions": [
+          {
+            "name": "fab-evidence-audit",
+            "version": "0.1.1"
+          }
+        ]
+      },
+      "verification_command": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/bin/python",
+          "-I",
+          "-B",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/verify_distribution.py",
+          "--installed-root",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/lib/python3.10/site-packages",
+          "--output",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython_3_10_22_wheel_distribution.json"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "{\"package_version\": \"0.1.1\", \"unittest_count\": 53, \"unittest_exit_code\": 0, \"replay_total\": 5376, \"preserved_core_byte_identical\": true}\n",
+        "stderr": ""
+      },
+      "distribution_verification": {
+        "verified_at_utc": "2026-10-24T05:49:03.056435+00:00",
+        "python": "3.10.22 (main, Oct 23 2026, 22:45:52) [GCC 13.3.0]",
+        "package_version": "0.1.1",
+        "imported_installed_distribution": true,
+        "preserved_core_byte_identical": true,
+        "unittest_count": 53,
+        "unittest_exit_code": 0,
+        "unittest_log": "test_all_alternative_configurations_must_fail_for_failure (test_api.DecisionTests) ... ok\ntest_all_four_states_are_distinct (test_api.DecisionTests) ... ok\ntest_configurations_cannot_pool_partial_successes (test_api.DecisionTests) ... ok\ntest_contexts_cannot_pool_partial_successes (test_api.DecisionTests) ... ok\ntest_different_consistent_records_for_same_cell_are_allowed (test_api.DecisionTests) ... ok\ntest_error_in_alternative_or_branch_overrides_success (test_api.DecisionTests) ... ok\ntest_error_in_other_configuration_overrides_complete_success (test_api.DecisionTests) ... ok\ntest_inactive_requirement_error_is_ignored (test_api.DecisionTests) ... ok\ntest_input_is_unchanged_and_normalization_is_detached (test_api.DecisionTests) ... ok\ntest_missing_records_are_unknown_not_failure (test_api.DecisionTests) ... ok\ntest_off_context_errors_and_contradictions_are_ignored (test_api.DecisionTests) ... ok\ntest_one_complete_configuration_can_succeed (test_api.DecisionTests) ... ok\ntest_one_failed_and_one_unknown_configuration_is_unknown (test_api.DecisionTests) ... ok\ntest_or_can_succeed_while_other_leaf_is_unknown (test_api.DecisionTests) ... ok\ntest_or_failure_and_missing_is_unknown (test_api.DecisionTests) ... ok\ntest_python_tuple_inputs_are_accepted (test_api.DecisionTests) ... ok\ntest_repeated_leaf_reuses_one_record (test_api.DecisionTests) ... ok\ntest_all_mandatory_task_and_record_keys_are_required (test_api.ValidationTests) ... ok\ntest_bad_record_types_and_cross_references_are_invalid (test_api.ValidationTests) ... ok\ntest_boolean_leaves_and_malformed_formulas_are_rejected (test_api.ValidationTests) ... ok\ntest_duplicate_record_id_is_invalid_even_across_contexts (test_api.ValidationTests) ... ok\ntest_formula_depth_limit_is_inclusive (test_api.ValidationTests) ... ok\ntest_formula_node_limit_is_inclusive (test_api.ValidationTests) ... ok\ntest_identifier_maximum_is_inclusive (test_api.ValidationTests) ... ok\ntest_record_count_overflow_is_rejected_before_interpreting_rows (test_api.ValidationTests) ... ok\ntest_requirement_and_configuration_limits (test_api.ValidationTests) ... ok\ntest_task_types_are_not_coerced (test_api.ValidationTests) ... ok\ntest_forged_witnesses_are_rejected (test_api.WitnessTests) ... ok\ntest_nonpass_result_requires_null_witness (test_api.WitnessTests) ... ok\ntest_success_witness_does_not_override_global_error (test_api.WitnessTests) ... ok\ntest_valid_generated_witness (test_api.WitnessTests) ... ok\ntest_duplicate_json_keys_at_top_and_nested_levels (test_cli.CliTests) ... ok\ntest_explicit_stdin_marker (test_cli.CliTests) ... ok\ntest_invalid_flag_uses_conventional_argument_error (test_cli.CliTests) ... ok\ntest_invalid_json (test_cli.CliTests) ... ok\ntest_invalid_utf8_file_has_json_stderr (test_cli.CliTests) ... ok\ntest_json_file_path (test_cli.CliTests) ... ok\ntest_missing_file_has_json_stderr (test_cli.CliTests) ... ok\ntest_nonstandard_constants_are_rejected_even_in_ignored_metadata (test_cli.CliTests) ... ok\ntest_valid_decisions_all_exit_zero (test_cli.CliTests) ... ok\ntest_escaped_lone_surrogate_identifier_round_trips (test_resource_limits.PortableCliTests) ... ok\ntest_nonascii_identifiers_round_trip (test_resource_limits.PortableCliTests) ... ok\ntest_resource_limit_has_distinct_exit_and_no_decision (test_resource_limits.PortableCliTests) ... ok\ntest_surrogate_in_duplicate_key_error_is_json (test_resource_limits.PortableCliTests) ... ok\ntest_budget_accounts_for_all_configurations (test_resource_limits.ResourceLimitTests) ... ok\ntest_budget_boundary_is_inclusive (test_resource_limits.ResourceLimitTests) ... ok\ntest_check_witness_also_stops_before_core (test_resource_limits.ResourceLimitTests) ... ok\ntest_explosive_valid_task_stops_before_core (test_resource_limits.ResourceLimitTests) ... ok\ntest_malformed_task_is_invalid_before_resource_estimation (test_resource_limits.ResourceLimitTests) ... ok\ntest_preflight_is_syntactic_even_when_evidence_is_missing (test_resource_limits.ResourceLimitTests) ... ok\ntest_small_fixture_decisions_are_unchanged (test_resource_limits.ResourceLimitTests) ... ok\ntest_small_repeated_subformula_remains_supported (test_resource_limits.ResourceLimitTests) ... ok\ntest_redundant_positive_support_is_valid_but_not_canonical (test_witness_contract.WitnessContractTests) ... ok\n\n----------------------------------------------------------------------\nRan 53 tests in 0.768s\n\nOK\n",
+        "installed_cli_examples": [
+          {
+            "example": "pass",
+            "expected": "PASS",
+            "passed": true
+          },
+          {
+            "example": "fail",
+            "expected": "FAIL",
+            "passed": true
+          },
+          {
+            "example": "unknown",
+            "expected": "UNKNOWN",
+            "passed": true
+          },
+          {
+            "example": "error",
+            "expected": "ERROR",
+            "passed": true
+          },
+          {
+            "example": "mixed_configuration",
+            "expected": "FAIL",
+            "passed": true
+          }
+        ],
+        "archive_replay": [
+          {
+            "archive": "context_v0_2_refined",
+            "cases": 5120,
+            "states": {
+              "PASS": 2048,
+              "FAIL": 1536,
+              "UNKNOWN": 512,
+              "ERROR": 1024
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          },
+          {
+            "archive": "sqlite_v0_3",
+            "cases": 128,
+            "states": {
+              "PASS": 72,
+              "FAIL": 52,
+              "UNKNOWN": 4
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          },
+          {
+            "archive": "decimal_v0_4",
+            "cases": 128,
+            "states": {
+              "PASS": 69,
+              "FAIL": 56,
+              "UNKNOWN": 3
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          }
+        ],
+        "replay_total": 5376,
+        "scope": "Package regression checks on existing dependent tasks. Package check_witness shares its core; independent historical audits remain separate. No new independent empirical samples or new backend operations in replay."
+      },
+      "walkthrough_command": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/bin/python",
+          "-I",
+          "-B",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/run_sqlite_walkthrough.py",
+          "--installed-root",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/lib/python3.10/site-packages",
+          "--output",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython_3_10_22_wheel_walkthrough"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "{\"output\": \"/workspace/scratch/08f9419d4225/clean_validation/cpython_3_10_22_wheel_walkthrough\", \"installed_version\": \"0.1.1\", \"state\": \"PASS\", \"witness_record_ids\": [\"sql-before_begin-strict-r0\", \"sql-before_begin-strict-r1\", \"sql-before_begin-strict-r2\"], \"forged_witness_rejected\": true}\n",
+        "stderr": ""
+      },
+      "walkthrough": {
+        "scope": "Reuse walkthrough over saved observations only; no new SQL measurement or independent sample.",
+        "installed_version": "0.1.1",
+        "installed_root": "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/lib/python3.10/site-packages",
+        "isolated_cli_no_source_fallback": true,
+        "cli_exit_code": 0,
+        "source_archive": "/workspace/scratch/08f9419d4225/fab_logic_study/results/sqlite_v0_3",
+        "source_sha256": {
+          "observations.json": "c5fb88b7541b4b81a83c065d25993dee00b1a9b528717b08edf3b52e912b037f",
+          "conditions.json": "51a6bf8d43034ddf07176bd38aea165ca89366912854bc36224d462a72b4e2c9",
+          "protocol_frozen.json": "16909a3d2e6a6ba0a0bc59cc2ceb67d0662a8eaeebb83981ff419108ab1e7498",
+          "tasks.jsonl": "4741608969132c54364ad23af1bdc6deb65570cd78319229c0d66c8b120e276d",
+          "predictions.json": "c3962c7ca8dc77d8c135d14501b08c7e312edcc7a241ee8268c4e49b1fa61491"
+        },
+        "walkthrough_source_sha256": "5b1c38d3a9833b7bafc6ceb19a5b3203d5d1eea735d919ef4d054d24db7742b0",
+        "installed_source_sha256": {
+          "__init__.py": "8ef6c5b3e8e482fd0b612bc96076a691bbfdff1f1d33be2a917eaaa2056a590d",
+          "api.py": "0837d91e70ac9a5a9c1f4f7baf231a0f5413503f58ae29400f4b9ab1abbed184",
+          "cli.py": "316efebfcf3e4af44b75ca4c69d27e8b35fc47fc52e63b3df50d99427d1de88f",
+          "_core.py": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8"
+        },
+        "task_id": "complete-before_begin-strict-both_with_unique",
+        "raw_derived_records": 6,
+        "archived_task_exact_match": true,
+        "decision": "PASS",
+        "witness_record_ids": [
+          "sql-before_begin-strict-r0",
+          "sql-before_begin-strict-r1",
+          "sql-before_begin-strict-r2"
+        ],
+        "witness_matches_original_observations": true,
+        "witness_matches_saved_control": true,
+        "forged_witness_rejected": true,
+        "limits": "Checks a source-to-record mapping and logical support, not source authenticity or a new SQLite run."
+      },
+      "passed": true,
+      "console_entrypoint": {
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-cpython-3.10.22/bin/fab-evidence-audit",
+        "exit_code": 0,
+        "stdout": "{\"state\": \"PASS\", \"witness\": {\"config_id\": \"a\", \"context\": \"target\", \"record_ids\": [\"a0\", \"a1\"]}}\n",
+        "stderr": "",
+        "passed": true
+      }
+    },
+    {
+      "label": "ubuntu_3_12_3_wheel",
+      "artifact": "wheel",
+      "before": {
+        "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/bin/python",
+        "prefix": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3",
+        "base_prefix": "/usr",
+        "isolated_flag": 1,
+        "user_site_enabled": false,
+        "sys_path": [
+          "/usr/lib/python312.zip",
+          "/usr/lib/python3.12",
+          "/usr/lib/python3.12/lib-dynload",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/lib/python3.12/site-packages"
+        ],
+        "purelib": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/lib/python3.12/site-packages",
+        "distributions": []
+      },
+      "pyvenv_cfg": "home = /usr/bin\nimplementation = CPython\nuv = 0.13.4\nversion_info = 3.12.3\ninclude-system-site-packages = false\n",
+      "installation": {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/uv",
+          "pip",
+          "install",
+          "--python",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/bin/python",
+          "--offline",
+          "--no-deps",
+          "--no-index",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/dist/fab_evidence_audit-0.1.1-py3-none-any.whl"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "Using Python 3.12.3 environment at: venv-system-3.12.3\nResolved 1 package in 1ms\nInstalled 1 package in 2ms\n + fab-evidence-audit==0.1.1 (from file:///workspace/scratch/08f9419d4225/fab_logic_study/release/dist/fab_evidence_audit-0.1.1-py3-none-any.whl)\n"
+      },
+      "after": {
+        "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/bin/python",
+        "prefix": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3",
+        "base_prefix": "/usr",
+        "isolated_flag": 1,
+        "user_site_enabled": false,
+        "sys_path": [
+          "/usr/lib/python312.zip",
+          "/usr/lib/python3.12",
+          "/usr/lib/python3.12/lib-dynload",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/lib/python3.12/site-packages"
+        ],
+        "purelib": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/lib/python3.12/site-packages",
+        "distributions": [
+          {
+            "name": "fab-evidence-audit",
+            "version": "0.1.1"
+          }
+        ]
+      },
+      "verification_command": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/bin/python",
+          "-I",
+          "-B",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/verify_distribution.py",
+          "--installed-root",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/lib/python3.12/site-packages",
+          "--output",
+          "/workspace/scratch/08f9419d4225/clean_validation/ubuntu_3_12_3_wheel_distribution.json"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "{\"package_version\": \"0.1.1\", \"unittest_count\": 53, \"unittest_exit_code\": 0, \"replay_total\": 5376, \"preserved_core_byte_identical\": true}\n",
+        "stderr": ""
+      },
+      "distribution_verification": {
+        "verified_at_utc": "2026-10-24T05:49:05.724653+00:00",
+        "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+        "package_version": "0.1.1",
+        "imported_installed_distribution": true,
+        "preserved_core_byte_identical": true,
+        "unittest_count": 53,
+        "unittest_exit_code": 0,
+        "unittest_log": "test_all_alternative_configurations_must_fail_for_failure (test_api.DecisionTests.test_all_alternative_configurations_must_fail_for_failure) ... ok\ntest_all_four_states_are_distinct (test_api.DecisionTests.test_all_four_states_are_distinct) ... ok\ntest_configurations_cannot_pool_partial_successes (test_api.DecisionTests.test_configurations_cannot_pool_partial_successes) ... ok\ntest_contexts_cannot_pool_partial_successes (test_api.DecisionTests.test_contexts_cannot_pool_partial_successes) ... ok\ntest_different_consistent_records_for_same_cell_are_allowed (test_api.DecisionTests.test_different_consistent_records_for_same_cell_are_allowed) ... ok\ntest_error_in_alternative_or_branch_overrides_success (test_api.DecisionTests.test_error_in_alternative_or_branch_overrides_success) ... ok\ntest_error_in_other_configuration_overrides_complete_success (test_api.DecisionTests.test_error_in_other_configuration_overrides_complete_success) ... ok\ntest_inactive_requirement_error_is_ignored (test_api.DecisionTests.test_inactive_requirement_error_is_ignored) ... ok\ntest_input_is_unchanged_and_normalization_is_detached (test_api.DecisionTests.test_input_is_unchanged_and_normalization_is_detached) ... ok\ntest_missing_records_are_unknown_not_failure (test_api.DecisionTests.test_missing_records_are_unknown_not_failure) ... ok\ntest_off_context_errors_and_contradictions_are_ignored (test_api.DecisionTests.test_off_context_errors_and_contradictions_are_ignored) ... ok\ntest_one_complete_configuration_can_succeed (test_api.DecisionTests.test_one_complete_configuration_can_succeed) ... ok\ntest_one_failed_and_one_unknown_configuration_is_unknown (test_api.DecisionTests.test_one_failed_and_one_unknown_configuration_is_unknown) ... ok\ntest_or_can_succeed_while_other_leaf_is_unknown (test_api.DecisionTests.test_or_can_succeed_while_other_leaf_is_unknown) ... ok\ntest_or_failure_and_missing_is_unknown (test_api.DecisionTests.test_or_failure_and_missing_is_unknown) ... ok\ntest_python_tuple_inputs_are_accepted (test_api.DecisionTests.test_python_tuple_inputs_are_accepted) ... ok\ntest_repeated_leaf_reuses_one_record (test_api.DecisionTests.test_repeated_leaf_reuses_one_record) ... ok\ntest_all_mandatory_task_and_record_keys_are_required (test_api.ValidationTests.test_all_mandatory_task_and_record_keys_are_required) ... ok\ntest_bad_record_types_and_cross_references_are_invalid (test_api.ValidationTests.test_bad_record_types_and_cross_references_are_invalid) ... ok\ntest_boolean_leaves_and_malformed_formulas_are_rejected (test_api.ValidationTests.test_boolean_leaves_and_malformed_formulas_are_rejected) ... ok\ntest_duplicate_record_id_is_invalid_even_across_contexts (test_api.ValidationTests.test_duplicate_record_id_is_invalid_even_across_contexts) ... ok\ntest_formula_depth_limit_is_inclusive (test_api.ValidationTests.test_formula_depth_limit_is_inclusive) ... ok\ntest_formula_node_limit_is_inclusive (test_api.ValidationTests.test_formula_node_limit_is_inclusive) ... ok\ntest_identifier_maximum_is_inclusive (test_api.ValidationTests.test_identifier_maximum_is_inclusive) ... ok\ntest_record_count_overflow_is_rejected_before_interpreting_rows (test_api.ValidationTests.test_record_count_overflow_is_rejected_before_interpreting_rows) ... ok\ntest_requirement_and_configuration_limits (test_api.ValidationTests.test_requirement_and_configuration_limits) ... ok\ntest_task_types_are_not_coerced (test_api.ValidationTests.test_task_types_are_not_coerced) ... ok\ntest_forged_witnesses_are_rejected (test_api.WitnessTests.test_forged_witnesses_are_rejected) ... ok\ntest_nonpass_result_requires_null_witness (test_api.WitnessTests.test_nonpass_result_requires_null_witness) ... ok\ntest_success_witness_does_not_override_global_error (test_api.WitnessTests.test_success_witness_does_not_override_global_error) ... ok\ntest_valid_generated_witness (test_api.WitnessTests.test_valid_generated_witness) ... ok\ntest_duplicate_json_keys_at_top_and_nested_levels (test_cli.CliTests.test_duplicate_json_keys_at_top_and_nested_levels) ... ok\ntest_explicit_stdin_marker (test_cli.CliTests.test_explicit_stdin_marker) ... ok\ntest_invalid_flag_uses_conventional_argument_error (test_cli.CliTests.test_invalid_flag_uses_conventional_argument_error) ... ok\ntest_invalid_json (test_cli.CliTests.test_invalid_json) ... ok\ntest_invalid_utf8_file_has_json_stderr (test_cli.CliTests.test_invalid_utf8_file_has_json_stderr) ... ok\ntest_json_file_path (test_cli.CliTests.test_json_file_path) ... ok\ntest_missing_file_has_json_stderr (test_cli.CliTests.test_missing_file_has_json_stderr) ... ok\ntest_nonstandard_constants_are_rejected_even_in_ignored_metadata (test_cli.CliTests.test_nonstandard_constants_are_rejected_even_in_ignored_metadata) ... ok\ntest_valid_decisions_all_exit_zero (test_cli.CliTests.test_valid_decisions_all_exit_zero) ... ok\ntest_escaped_lone_surrogate_identifier_round_trips (test_resource_limits.PortableCliTests.test_escaped_lone_surrogate_identifier_round_trips) ... ok\ntest_nonascii_identifiers_round_trip (test_resource_limits.PortableCliTests.test_nonascii_identifiers_round_trip) ... ok\ntest_resource_limit_has_distinct_exit_and_no_decision (test_resource_limits.PortableCliTests.test_resource_limit_has_distinct_exit_and_no_decision) ... ok\ntest_surrogate_in_duplicate_key_error_is_json (test_resource_limits.PortableCliTests.test_surrogate_in_duplicate_key_error_is_json) ... ok\ntest_budget_accounts_for_all_configurations (test_resource_limits.ResourceLimitTests.test_budget_accounts_for_all_configurations) ... ok\ntest_budget_boundary_is_inclusive (test_resource_limits.ResourceLimitTests.test_budget_boundary_is_inclusive) ... ok\ntest_check_witness_also_stops_before_core (test_resource_limits.ResourceLimitTests.test_check_witness_also_stops_before_core) ... ok\ntest_explosive_valid_task_stops_before_core (test_resource_limits.ResourceLimitTests.test_explosive_valid_task_stops_before_core) ... ok\ntest_malformed_task_is_invalid_before_resource_estimation (test_resource_limits.ResourceLimitTests.test_malformed_task_is_invalid_before_resource_estimation) ... ok\ntest_preflight_is_syntactic_even_when_evidence_is_missing (test_resource_limits.ResourceLimitTests.test_preflight_is_syntactic_even_when_evidence_is_missing) ... ok\ntest_small_fixture_decisions_are_unchanged (test_resource_limits.ResourceLimitTests.test_small_fixture_decisions_are_unchanged) ... ok\ntest_small_repeated_subformula_remains_supported (test_resource_limits.ResourceLimitTests.test_small_repeated_subformula_remains_supported) ... ok\ntest_redundant_positive_support_is_valid_but_not_canonical (test_witness_contract.WitnessContractTests.test_redundant_positive_support_is_valid_but_not_canonical) ... ok\n\n----------------------------------------------------------------------\nRan 53 tests in 0.753s\n\nOK\n",
+        "installed_cli_examples": [
+          {
+            "example": "pass",
+            "expected": "PASS",
+            "passed": true
+          },
+          {
+            "example": "fail",
+            "expected": "FAIL",
+            "passed": true
+          },
+          {
+            "example": "unknown",
+            "expected": "UNKNOWN",
+            "passed": true
+          },
+          {
+            "example": "error",
+            "expected": "ERROR",
+            "passed": true
+          },
+          {
+            "example": "mixed_configuration",
+            "expected": "FAIL",
+            "passed": true
+          }
+        ],
+        "archive_replay": [
+          {
+            "archive": "context_v0_2_refined",
+            "cases": 5120,
+            "states": {
+              "PASS": 2048,
+              "FAIL": 1536,
+              "UNKNOWN": 512,
+              "ERROR": 1024
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          },
+          {
+            "archive": "sqlite_v0_3",
+            "cases": 128,
+            "states": {
+              "PASS": 72,
+              "FAIL": 52,
+              "UNKNOWN": 4
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          },
+          {
+            "archive": "decimal_v0_4",
+            "cases": 128,
+            "states": {
+              "PASS": 69,
+              "FAIL": 56,
+              "UNKNOWN": 3
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          }
+        ],
+        "replay_total": 5376,
+        "scope": "Package regression checks on existing dependent tasks. Package check_witness shares its core; independent historical audits remain separate. No new independent empirical samples or new backend operations in replay."
+      },
+      "walkthrough_command": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/bin/python",
+          "-I",
+          "-B",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/run_sqlite_walkthrough.py",
+          "--installed-root",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/lib/python3.12/site-packages",
+          "--output",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/walkthrough_verified"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "{\"output\": \"/workspace/scratch/08f9419d4225/fab_logic_study/release/walkthrough_verified\", \"installed_version\": \"0.1.1\", \"state\": \"PASS\", \"witness_record_ids\": [\"sql-before_begin-strict-r0\", \"sql-before_begin-strict-r1\", \"sql-before_begin-strict-r2\"], \"forged_witness_rejected\": true}\n",
+        "stderr": ""
+      },
+      "walkthrough": {
+        "scope": "Reuse walkthrough over saved observations only; no new SQL measurement or independent sample.",
+        "installed_version": "0.1.1",
+        "installed_root": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/lib/python3.12/site-packages",
+        "isolated_cli_no_source_fallback": true,
+        "cli_exit_code": 0,
+        "source_archive": "/workspace/scratch/08f9419d4225/fab_logic_study/results/sqlite_v0_3",
+        "source_sha256": {
+          "observations.json": "c5fb88b7541b4b81a83c065d25993dee00b1a9b528717b08edf3b52e912b037f",
+          "conditions.json": "51a6bf8d43034ddf07176bd38aea165ca89366912854bc36224d462a72b4e2c9",
+          "protocol_frozen.json": "16909a3d2e6a6ba0a0bc59cc2ceb67d0662a8eaeebb83981ff419108ab1e7498",
+          "tasks.jsonl": "4741608969132c54364ad23af1bdc6deb65570cd78319229c0d66c8b120e276d",
+          "predictions.json": "c3962c7ca8dc77d8c135d14501b08c7e312edcc7a241ee8268c4e49b1fa61491"
+        },
+        "walkthrough_source_sha256": "5b1c38d3a9833b7bafc6ceb19a5b3203d5d1eea735d919ef4d054d24db7742b0",
+        "installed_source_sha256": {
+          "__init__.py": "8ef6c5b3e8e482fd0b612bc96076a691bbfdff1f1d33be2a917eaaa2056a590d",
+          "api.py": "0837d91e70ac9a5a9c1f4f7baf231a0f5413503f58ae29400f4b9ab1abbed184",
+          "cli.py": "316efebfcf3e4af44b75ca4c69d27e8b35fc47fc52e63b3df50d99427d1de88f",
+          "_core.py": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8"
+        },
+        "task_id": "complete-before_begin-strict-both_with_unique",
+        "raw_derived_records": 6,
+        "archived_task_exact_match": true,
+        "decision": "PASS",
+        "witness_record_ids": [
+          "sql-before_begin-strict-r0",
+          "sql-before_begin-strict-r1",
+          "sql-before_begin-strict-r2"
+        ],
+        "witness_matches_original_observations": true,
+        "witness_matches_saved_control": true,
+        "forged_witness_rejected": true,
+        "limits": "Checks a source-to-record mapping and logical support, not source authenticity or a new SQLite run."
+      },
+      "passed": true,
+      "console_entrypoint": {
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/bin/fab-evidence-audit",
+        "exit_code": 0,
+        "stdout": "{\"state\": \"PASS\", \"witness\": {\"config_id\": \"a\", \"context\": \"target\", \"record_ids\": [\"a0\", \"a1\"]}}\n",
+        "stderr": "",
+        "passed": true
+      }
+    },
+    {
+      "label": "runtime_3_12_14_wheel",
+      "artifact": "wheel",
+      "before": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/bin/python",
+        "prefix": "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14",
+        "base_prefix": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python",
+        "isolated_flag": 1,
+        "user_site_enabled": false,
+        "sys_path": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip",
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12",
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/lib/python3.12/site-packages"
+        ],
+        "purelib": "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/lib/python3.12/site-packages",
+        "distributions": []
+      },
+      "pyvenv_cfg": "home = /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin\nimplementation = CPython\nuv = 0.13.4\nversion_info = 3.12.14\ninclude-system-site-packages = false\n",
+      "installation": {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/uv",
+          "pip",
+          "install",
+          "--python",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/bin/python",
+          "--offline",
+          "--no-deps",
+          "--no-index",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/dist/fab_evidence_audit-0.1.1-py3-none-any.whl"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "Using Python 3.12.14 environment at: venv-runtime-3.12.14\nResolved 1 package in 1ms\nInstalled 1 package in 2ms\n + fab-evidence-audit==0.1.1 (from file:///workspace/scratch/08f9419d4225/fab_logic_study/release/dist/fab_evidence_audit-0.1.1-py3-none-any.whl)\n"
+      },
+      "after": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/bin/python",
+        "prefix": "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14",
+        "base_prefix": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python",
+        "isolated_flag": 1,
+        "user_site_enabled": false,
+        "sys_path": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip",
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12",
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/lib/python3.12/site-packages"
+        ],
+        "purelib": "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/lib/python3.12/site-packages",
+        "distributions": [
+          {
+            "name": "fab-evidence-audit",
+            "version": "0.1.1"
+          }
+        ]
+      },
+      "verification_command": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/bin/python",
+          "-I",
+          "-B",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/verify_distribution.py",
+          "--installed-root",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/lib/python3.12/site-packages",
+          "--output",
+          "/workspace/scratch/08f9419d4225/clean_validation/runtime_3_12_14_wheel_distribution.json"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "{\"package_version\": \"0.1.1\", \"unittest_count\": 53, \"unittest_exit_code\": 0, \"replay_total\": 5376, \"preserved_core_byte_identical\": true}\n",
+        "stderr": ""
+      },
+      "distribution_verification": {
+        "verified_at_utc": "2026-10-24T05:49:08.139526+00:00",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "package_version": "0.1.1",
+        "imported_installed_distribution": true,
+        "preserved_core_byte_identical": true,
+        "unittest_count": 53,
+        "unittest_exit_code": 0,
+        "unittest_log": "test_all_alternative_configurations_must_fail_for_failure (test_api.DecisionTests.test_all_alternative_configurations_must_fail_for_failure) ... ok\ntest_all_four_states_are_distinct (test_api.DecisionTests.test_all_four_states_are_distinct) ... ok\ntest_configurations_cannot_pool_partial_successes (test_api.DecisionTests.test_configurations_cannot_pool_partial_successes) ... ok\ntest_contexts_cannot_pool_partial_successes (test_api.DecisionTests.test_contexts_cannot_pool_partial_successes) ... ok\ntest_different_consistent_records_for_same_cell_are_allowed (test_api.DecisionTests.test_different_consistent_records_for_same_cell_are_allowed) ... ok\ntest_error_in_alternative_or_branch_overrides_success (test_api.DecisionTests.test_error_in_alternative_or_branch_overrides_success) ... ok\ntest_error_in_other_configuration_overrides_complete_success (test_api.DecisionTests.test_error_in_other_configuration_overrides_complete_success) ... ok\ntest_inactive_requirement_error_is_ignored (test_api.DecisionTests.test_inactive_requirement_error_is_ignored) ... ok\ntest_input_is_unchanged_and_normalization_is_detached (test_api.DecisionTests.test_input_is_unchanged_and_normalization_is_detached) ... ok\ntest_missing_records_are_unknown_not_failure (test_api.DecisionTests.test_missing_records_are_unknown_not_failure) ... ok\ntest_off_context_errors_and_contradictions_are_ignored (test_api.DecisionTests.test_off_context_errors_and_contradictions_are_ignored) ... ok\ntest_one_complete_configuration_can_succeed (test_api.DecisionTests.test_one_complete_configuration_can_succeed) ... ok\ntest_one_failed_and_one_unknown_configuration_is_unknown (test_api.DecisionTests.test_one_failed_and_one_unknown_configuration_is_unknown) ... ok\ntest_or_can_succeed_while_other_leaf_is_unknown (test_api.DecisionTests.test_or_can_succeed_while_other_leaf_is_unknown) ... ok\ntest_or_failure_and_missing_is_unknown (test_api.DecisionTests.test_or_failure_and_missing_is_unknown) ... ok\ntest_python_tuple_inputs_are_accepted (test_api.DecisionTests.test_python_tuple_inputs_are_accepted) ... ok\ntest_repeated_leaf_reuses_one_record (test_api.DecisionTests.test_repeated_leaf_reuses_one_record) ... ok\ntest_all_mandatory_task_and_record_keys_are_required (test_api.ValidationTests.test_all_mandatory_task_and_record_keys_are_required) ... ok\ntest_bad_record_types_and_cross_references_are_invalid (test_api.ValidationTests.test_bad_record_types_and_cross_references_are_invalid) ... ok\ntest_boolean_leaves_and_malformed_formulas_are_rejected (test_api.ValidationTests.test_boolean_leaves_and_malformed_formulas_are_rejected) ... ok\ntest_duplicate_record_id_is_invalid_even_across_contexts (test_api.ValidationTests.test_duplicate_record_id_is_invalid_even_across_contexts) ... ok\ntest_formula_depth_limit_is_inclusive (test_api.ValidationTests.test_formula_depth_limit_is_inclusive) ... ok\ntest_formula_node_limit_is_inclusive (test_api.ValidationTests.test_formula_node_limit_is_inclusive) ... ok\ntest_identifier_maximum_is_inclusive (test_api.ValidationTests.test_identifier_maximum_is_inclusive) ... ok\ntest_record_count_overflow_is_rejected_before_interpreting_rows (test_api.ValidationTests.test_record_count_overflow_is_rejected_before_interpreting_rows) ... ok\ntest_requirement_and_configuration_limits (test_api.ValidationTests.test_requirement_and_configuration_limits) ... ok\ntest_task_types_are_not_coerced (test_api.ValidationTests.test_task_types_are_not_coerced) ... ok\ntest_forged_witnesses_are_rejected (test_api.WitnessTests.test_forged_witnesses_are_rejected) ... ok\ntest_nonpass_result_requires_null_witness (test_api.WitnessTests.test_nonpass_result_requires_null_witness) ... ok\ntest_success_witness_does_not_override_global_error (test_api.WitnessTests.test_success_witness_does_not_override_global_error) ... ok\ntest_valid_generated_witness (test_api.WitnessTests.test_valid_generated_witness) ... ok\ntest_duplicate_json_keys_at_top_and_nested_levels (test_cli.CliTests.test_duplicate_json_keys_at_top_and_nested_levels) ... ok\ntest_explicit_stdin_marker (test_cli.CliTests.test_explicit_stdin_marker) ... ok\ntest_invalid_flag_uses_conventional_argument_error (test_cli.CliTests.test_invalid_flag_uses_conventional_argument_error) ... ok\ntest_invalid_json (test_cli.CliTests.test_invalid_json) ... ok\ntest_invalid_utf8_file_has_json_stderr (test_cli.CliTests.test_invalid_utf8_file_has_json_stderr) ... ok\ntest_json_file_path (test_cli.CliTests.test_json_file_path) ... ok\ntest_missing_file_has_json_stderr (test_cli.CliTests.test_missing_file_has_json_stderr) ... ok\ntest_nonstandard_constants_are_rejected_even_in_ignored_metadata (test_cli.CliTests.test_nonstandard_constants_are_rejected_even_in_ignored_metadata) ... ok\ntest_valid_decisions_all_exit_zero (test_cli.CliTests.test_valid_decisions_all_exit_zero) ... ok\ntest_escaped_lone_surrogate_identifier_round_trips (test_resource_limits.PortableCliTests.test_escaped_lone_surrogate_identifier_round_trips) ... ok\ntest_nonascii_identifiers_round_trip (test_resource_limits.PortableCliTests.test_nonascii_identifiers_round_trip) ... ok\ntest_resource_limit_has_distinct_exit_and_no_decision (test_resource_limits.PortableCliTests.test_resource_limit_has_distinct_exit_and_no_decision) ... ok\ntest_surrogate_in_duplicate_key_error_is_json (test_resource_limits.PortableCliTests.test_surrogate_in_duplicate_key_error_is_json) ... ok\ntest_budget_accounts_for_all_configurations (test_resource_limits.ResourceLimitTests.test_budget_accounts_for_all_configurations) ... ok\ntest_budget_boundary_is_inclusive (test_resource_limits.ResourceLimitTests.test_budget_boundary_is_inclusive) ... ok\ntest_check_witness_also_stops_before_core (test_resource_limits.ResourceLimitTests.test_check_witness_also_stops_before_core) ... ok\ntest_explosive_valid_task_stops_before_core (test_resource_limits.ResourceLimitTests.test_explosive_valid_task_stops_before_core) ... ok\ntest_malformed_task_is_invalid_before_resource_estimation (test_resource_limits.ResourceLimitTests.test_malformed_task_is_invalid_before_resource_estimation) ... ok\ntest_preflight_is_syntactic_even_when_evidence_is_missing (test_resource_limits.ResourceLimitTests.test_preflight_is_syntactic_even_when_evidence_is_missing) ... ok\ntest_small_fixture_decisions_are_unchanged (test_resource_limits.ResourceLimitTests.test_small_fixture_decisions_are_unchanged) ... ok\ntest_small_repeated_subformula_remains_supported (test_resource_limits.ResourceLimitTests.test_small_repeated_subformula_remains_supported) ... ok\ntest_redundant_positive_support_is_valid_but_not_canonical (test_witness_contract.WitnessContractTests.test_redundant_positive_support_is_valid_but_not_canonical) ... ok\n\n----------------------------------------------------------------------\nRan 53 tests in 0.727s\n\nOK\n",
+        "installed_cli_examples": [
+          {
+            "example": "pass",
+            "expected": "PASS",
+            "passed": true
+          },
+          {
+            "example": "fail",
+            "expected": "FAIL",
+            "passed": true
+          },
+          {
+            "example": "unknown",
+            "expected": "UNKNOWN",
+            "passed": true
+          },
+          {
+            "example": "error",
+            "expected": "ERROR",
+            "passed": true
+          },
+          {
+            "example": "mixed_configuration",
+            "expected": "FAIL",
+            "passed": true
+          }
+        ],
+        "archive_replay": [
+          {
+            "archive": "context_v0_2_refined",
+            "cases": 5120,
+            "states": {
+              "PASS": 2048,
+              "FAIL": 1536,
+              "UNKNOWN": 512,
+              "ERROR": 1024
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          },
+          {
+            "archive": "sqlite_v0_3",
+            "cases": 128,
+            "states": {
+              "PASS": 72,
+              "FAIL": 52,
+              "UNKNOWN": 4
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          },
+          {
+            "archive": "decimal_v0_4",
+            "cases": 128,
+            "states": {
+              "PASS": 69,
+              "FAIL": 56,
+              "UNKNOWN": 3
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          }
+        ],
+        "replay_total": 5376,
+        "scope": "Package regression checks on existing dependent tasks. Package check_witness shares its core; independent historical audits remain separate. No new independent empirical samples or new backend operations in replay."
+      },
+      "walkthrough_command": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/bin/python",
+          "-I",
+          "-B",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/run_sqlite_walkthrough.py",
+          "--installed-root",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/lib/python3.12/site-packages",
+          "--output",
+          "/workspace/scratch/08f9419d4225/clean_validation/runtime_3_12_14_wheel_walkthrough"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "{\"output\": \"/workspace/scratch/08f9419d4225/clean_validation/runtime_3_12_14_wheel_walkthrough\", \"installed_version\": \"0.1.1\", \"state\": \"PASS\", \"witness_record_ids\": [\"sql-before_begin-strict-r0\", \"sql-before_begin-strict-r1\", \"sql-before_begin-strict-r2\"], \"forged_witness_rejected\": true}\n",
+        "stderr": ""
+      },
+      "walkthrough": {
+        "scope": "Reuse walkthrough over saved observations only; no new SQL measurement or independent sample.",
+        "installed_version": "0.1.1",
+        "installed_root": "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/lib/python3.12/site-packages",
+        "isolated_cli_no_source_fallback": true,
+        "cli_exit_code": 0,
+        "source_archive": "/workspace/scratch/08f9419d4225/fab_logic_study/results/sqlite_v0_3",
+        "source_sha256": {
+          "observations.json": "c5fb88b7541b4b81a83c065d25993dee00b1a9b528717b08edf3b52e912b037f",
+          "conditions.json": "51a6bf8d43034ddf07176bd38aea165ca89366912854bc36224d462a72b4e2c9",
+          "protocol_frozen.json": "16909a3d2e6a6ba0a0bc59cc2ceb67d0662a8eaeebb83981ff419108ab1e7498",
+          "tasks.jsonl": "4741608969132c54364ad23af1bdc6deb65570cd78319229c0d66c8b120e276d",
+          "predictions.json": "c3962c7ca8dc77d8c135d14501b08c7e312edcc7a241ee8268c4e49b1fa61491"
+        },
+        "walkthrough_source_sha256": "5b1c38d3a9833b7bafc6ceb19a5b3203d5d1eea735d919ef4d054d24db7742b0",
+        "installed_source_sha256": {
+          "__init__.py": "8ef6c5b3e8e482fd0b612bc96076a691bbfdff1f1d33be2a917eaaa2056a590d",
+          "api.py": "0837d91e70ac9a5a9c1f4f7baf231a0f5413503f58ae29400f4b9ab1abbed184",
+          "cli.py": "316efebfcf3e4af44b75ca4c69d27e8b35fc47fc52e63b3df50d99427d1de88f",
+          "_core.py": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8"
+        },
+        "task_id": "complete-before_begin-strict-both_with_unique",
+        "raw_derived_records": 6,
+        "archived_task_exact_match": true,
+        "decision": "PASS",
+        "witness_record_ids": [
+          "sql-before_begin-strict-r0",
+          "sql-before_begin-strict-r1",
+          "sql-before_begin-strict-r2"
+        ],
+        "witness_matches_original_observations": true,
+        "witness_matches_saved_control": true,
+        "forged_witness_rejected": true,
+        "limits": "Checks a source-to-record mapping and logical support, not source authenticity or a new SQLite run."
+      },
+      "passed": true,
+      "console_entrypoint": {
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-runtime-3.12.14/bin/fab-evidence-audit",
+        "exit_code": 0,
+        "stdout": "{\"state\": \"PASS\", \"witness\": {\"config_id\": \"a\", \"context\": \"target\", \"record_ids\": [\"a0\", \"a1\"]}}\n",
+        "stderr": "",
+        "passed": true
+      }
+    },
+    {
+      "label": "cpython_3_10_22_sdist",
+      "artifact": "sdist",
+      "before": {
+        "python": "3.10.22 (main, Oct 23 2026, 22:45:52) [GCC 13.3.0]",
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/bin/python",
+        "prefix": "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22",
+        "base_prefix": "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22",
+        "isolated_flag": 1,
+        "user_site_enabled": false,
+        "sys_path": [
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python310.zip",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python3.10",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python3.10/lib-dynload",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/lib/python3.10/site-packages"
+        ],
+        "purelib": "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/lib/python3.10/site-packages",
+        "distributions": [
+          {
+            "name": "setuptools",
+            "version": "79.0.1"
+          },
+          {
+            "name": "pip",
+            "version": "23.0.1"
+          }
+        ]
+      },
+      "pyvenv_cfg": "home = /workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/bin\ninclude-system-site-packages = false\nversion = 3.10.22\n",
+      "installation": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/bin/python",
+          "-I",
+          "-B",
+          "-m",
+          "pip",
+          "install",
+          "--no-build-isolation",
+          "--no-deps",
+          "--no-index",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/dist/fab_evidence_audit-0.1.1.tar.gz"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "Processing /workspace/scratch/08f9419d4225/fab_logic_study/release/dist/fab_evidence_audit-0.1.1.tar.gz\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: fab-evidence-audit\n  Building wheel for fab-evidence-audit (pyproject.toml): started\n  Building wheel for fab-evidence-audit (pyproject.toml): finished with status 'done'\n  Created wheel for fab-evidence-audit: filename=fab_evidence_audit-0.1.1-py3-none-any.whl size=11952 sha256=4dee4d2c241a44a9b32a0d36ee5dfb5a23738ece7e738327e2bf43fec6a61ec8\n  Stored in directory: /root/.cache/pip/wheels/1b/cb/cf/4280e316a8c20ffe8bc9a1e86e25804c161117883c49e78135\nSuccessfully built fab-evidence-audit\nInstalling collected packages: fab-evidence-audit\nSuccessfully installed fab-evidence-audit-0.1.1\n",
+        "stderr": ""
+      },
+      "after": {
+        "python": "3.10.22 (main, Oct 23 2026, 22:45:52) [GCC 13.3.0]",
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/bin/python",
+        "prefix": "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22",
+        "base_prefix": "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22",
+        "isolated_flag": 1,
+        "user_site_enabled": false,
+        "sys_path": [
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python310.zip",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python3.10",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython/install-3.10.22/lib/python3.10/lib-dynload",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/lib/python3.10/site-packages"
+        ],
+        "purelib": "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/lib/python3.10/site-packages",
+        "distributions": [
+          {
+            "name": "fab-evidence-audit",
+            "version": "0.1.1"
+          },
+          {
+            "name": "setuptools",
+            "version": "79.0.1"
+          },
+          {
+            "name": "pip",
+            "version": "23.0.1"
+          }
+        ]
+      },
+      "verification_command": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/bin/python",
+          "-I",
+          "-B",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/verify_distribution.py",
+          "--installed-root",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/lib/python3.10/site-packages",
+          "--output",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython_3_10_22_sdist_distribution.json"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "{\"package_version\": \"0.1.1\", \"unittest_count\": 53, \"unittest_exit_code\": 0, \"replay_total\": 5376, \"preserved_core_byte_identical\": true}\n",
+        "stderr": ""
+      },
+      "distribution_verification": {
+        "verified_at_utc": "2026-10-24T05:49:11.859713+00:00",
+        "python": "3.10.22 (main, Oct 23 2026, 22:45:52) [GCC 13.3.0]",
+        "package_version": "0.1.1",
+        "imported_installed_distribution": true,
+        "preserved_core_byte_identical": true,
+        "unittest_count": 53,
+        "unittest_exit_code": 0,
+        "unittest_log": "test_all_alternative_configurations_must_fail_for_failure (test_api.DecisionTests) ... ok\ntest_all_four_states_are_distinct (test_api.DecisionTests) ... ok\ntest_configurations_cannot_pool_partial_successes (test_api.DecisionTests) ... ok\ntest_contexts_cannot_pool_partial_successes (test_api.DecisionTests) ... ok\ntest_different_consistent_records_for_same_cell_are_allowed (test_api.DecisionTests) ... ok\ntest_error_in_alternative_or_branch_overrides_success (test_api.DecisionTests) ... ok\ntest_error_in_other_configuration_overrides_complete_success (test_api.DecisionTests) ... ok\ntest_inactive_requirement_error_is_ignored (test_api.DecisionTests) ... ok\ntest_input_is_unchanged_and_normalization_is_detached (test_api.DecisionTests) ... ok\ntest_missing_records_are_unknown_not_failure (test_api.DecisionTests) ... ok\ntest_off_context_errors_and_contradictions_are_ignored (test_api.DecisionTests) ... ok\ntest_one_complete_configuration_can_succeed (test_api.DecisionTests) ... ok\ntest_one_failed_and_one_unknown_configuration_is_unknown (test_api.DecisionTests) ... ok\ntest_or_can_succeed_while_other_leaf_is_unknown (test_api.DecisionTests) ... ok\ntest_or_failure_and_missing_is_unknown (test_api.DecisionTests) ... ok\ntest_python_tuple_inputs_are_accepted (test_api.DecisionTests) ... ok\ntest_repeated_leaf_reuses_one_record (test_api.DecisionTests) ... ok\ntest_all_mandatory_task_and_record_keys_are_required (test_api.ValidationTests) ... ok\ntest_bad_record_types_and_cross_references_are_invalid (test_api.ValidationTests) ... ok\ntest_boolean_leaves_and_malformed_formulas_are_rejected (test_api.ValidationTests) ... ok\ntest_duplicate_record_id_is_invalid_even_across_contexts (test_api.ValidationTests) ... ok\ntest_formula_depth_limit_is_inclusive (test_api.ValidationTests) ... ok\ntest_formula_node_limit_is_inclusive (test_api.ValidationTests) ... ok\ntest_identifier_maximum_is_inclusive (test_api.ValidationTests) ... ok\ntest_record_count_overflow_is_rejected_before_interpreting_rows (test_api.ValidationTests) ... ok\ntest_requirement_and_configuration_limits (test_api.ValidationTests) ... ok\ntest_task_types_are_not_coerced (test_api.ValidationTests) ... ok\ntest_forged_witnesses_are_rejected (test_api.WitnessTests) ... ok\ntest_nonpass_result_requires_null_witness (test_api.WitnessTests) ... ok\ntest_success_witness_does_not_override_global_error (test_api.WitnessTests) ... ok\ntest_valid_generated_witness (test_api.WitnessTests) ... ok\ntest_duplicate_json_keys_at_top_and_nested_levels (test_cli.CliTests) ... ok\ntest_explicit_stdin_marker (test_cli.CliTests) ... ok\ntest_invalid_flag_uses_conventional_argument_error (test_cli.CliTests) ... ok\ntest_invalid_json (test_cli.CliTests) ... ok\ntest_invalid_utf8_file_has_json_stderr (test_cli.CliTests) ... ok\ntest_json_file_path (test_cli.CliTests) ... ok\ntest_missing_file_has_json_stderr (test_cli.CliTests) ... ok\ntest_nonstandard_constants_are_rejected_even_in_ignored_metadata (test_cli.CliTests) ... ok\ntest_valid_decisions_all_exit_zero (test_cli.CliTests) ... ok\ntest_escaped_lone_surrogate_identifier_round_trips (test_resource_limits.PortableCliTests) ... ok\ntest_nonascii_identifiers_round_trip (test_resource_limits.PortableCliTests) ... ok\ntest_resource_limit_has_distinct_exit_and_no_decision (test_resource_limits.PortableCliTests) ... ok\ntest_surrogate_in_duplicate_key_error_is_json (test_resource_limits.PortableCliTests) ... ok\ntest_budget_accounts_for_all_configurations (test_resource_limits.ResourceLimitTests) ... ok\ntest_budget_boundary_is_inclusive (test_resource_limits.ResourceLimitTests) ... ok\ntest_check_witness_also_stops_before_core (test_resource_limits.ResourceLimitTests) ... ok\ntest_explosive_valid_task_stops_before_core (test_resource_limits.ResourceLimitTests) ... ok\ntest_malformed_task_is_invalid_before_resource_estimation (test_resource_limits.ResourceLimitTests) ... ok\ntest_preflight_is_syntactic_even_when_evidence_is_missing (test_resource_limits.ResourceLimitTests) ... ok\ntest_small_fixture_decisions_are_unchanged (test_resource_limits.ResourceLimitTests) ... ok\ntest_small_repeated_subformula_remains_supported (test_resource_limits.ResourceLimitTests) ... ok\ntest_redundant_positive_support_is_valid_but_not_canonical (test_witness_contract.WitnessContractTests) ... ok\n\n----------------------------------------------------------------------\nRan 53 tests in 0.643s\n\nOK\n",
+        "installed_cli_examples": [
+          {
+            "example": "pass",
+            "expected": "PASS",
+            "passed": true
+          },
+          {
+            "example": "fail",
+            "expected": "FAIL",
+            "passed": true
+          },
+          {
+            "example": "unknown",
+            "expected": "UNKNOWN",
+            "passed": true
+          },
+          {
+            "example": "error",
+            "expected": "ERROR",
+            "passed": true
+          },
+          {
+            "example": "mixed_configuration",
+            "expected": "FAIL",
+            "passed": true
+          }
+        ],
+        "archive_replay": [
+          {
+            "archive": "context_v0_2_refined",
+            "cases": 5120,
+            "states": {
+              "PASS": 2048,
+              "FAIL": 1536,
+              "UNKNOWN": 512,
+              "ERROR": 1024
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          },
+          {
+            "archive": "sqlite_v0_3",
+            "cases": 128,
+            "states": {
+              "PASS": 72,
+              "FAIL": 52,
+              "UNKNOWN": 4
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          },
+          {
+            "archive": "decimal_v0_4",
+            "cases": 128,
+            "states": {
+              "PASS": 69,
+              "FAIL": 56,
+              "UNKNOWN": 3
+            },
+            "oracle_mismatches": 0,
+            "invalid_package_witness_checks": 0
+          }
+        ],
+        "replay_total": 5376,
+        "scope": "Package regression checks on existing dependent tasks. Package check_witness shares its core; independent historical audits remain separate. No new independent empirical samples or new backend operations in replay."
+      },
+      "walkthrough_command": {
+        "argv": [
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/bin/python",
+          "-I",
+          "-B",
+          "/workspace/scratch/08f9419d4225/fab_logic_study/release/run_sqlite_walkthrough.py",
+          "--installed-root",
+          "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/lib/python3.10/site-packages",
+          "--output",
+          "/workspace/scratch/08f9419d4225/clean_validation/cpython_3_10_22_sdist_walkthrough"
+        ],
+        "cwd": "/workspace/scratch/08f9419d4225/clean_validation",
+        "exit_code": 0,
+        "stdout": "{\"output\": \"/workspace/scratch/08f9419d4225/clean_validation/cpython_3_10_22_sdist_walkthrough\", \"installed_version\": \"0.1.1\", \"state\": \"PASS\", \"witness_record_ids\": [\"sql-before_begin-strict-r0\", \"sql-before_begin-strict-r1\", \"sql-before_begin-strict-r2\"], \"forged_witness_rejected\": true}\n",
+        "stderr": ""
+      },
+      "walkthrough": {
+        "scope": "Reuse walkthrough over saved observations only; no new SQL measurement or independent sample.",
+        "installed_version": "0.1.1",
+        "installed_root": "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/lib/python3.10/site-packages",
+        "isolated_cli_no_source_fallback": true,
+        "cli_exit_code": 0,
+        "source_archive": "/workspace/scratch/08f9419d4225/fab_logic_study/results/sqlite_v0_3",
+        "source_sha256": {
+          "observations.json": "c5fb88b7541b4b81a83c065d25993dee00b1a9b528717b08edf3b52e912b037f",
+          "conditions.json": "51a6bf8d43034ddf07176bd38aea165ca89366912854bc36224d462a72b4e2c9",
+          "protocol_frozen.json": "16909a3d2e6a6ba0a0bc59cc2ceb67d0662a8eaeebb83981ff419108ab1e7498",
+          "tasks.jsonl": "4741608969132c54364ad23af1bdc6deb65570cd78319229c0d66c8b120e276d",
+          "predictions.json": "c3962c7ca8dc77d8c135d14501b08c7e312edcc7a241ee8268c4e49b1fa61491"
+        },
+        "walkthrough_source_sha256": "5b1c38d3a9833b7bafc6ceb19a5b3203d5d1eea735d919ef4d054d24db7742b0",
+        "installed_source_sha256": {
+          "__init__.py": "8ef6c5b3e8e482fd0b612bc96076a691bbfdff1f1d33be2a917eaaa2056a590d",
+          "api.py": "0837d91e70ac9a5a9c1f4f7baf231a0f5413503f58ae29400f4b9ab1abbed184",
+          "cli.py": "316efebfcf3e4af44b75ca4c69d27e8b35fc47fc52e63b3df50d99427d1de88f",
+          "_core.py": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8"
+        },
+        "task_id": "complete-before_begin-strict-both_with_unique",
+        "raw_derived_records": 6,
+        "archived_task_exact_match": true,
+        "decision": "PASS",
+        "witness_record_ids": [
+          "sql-before_begin-strict-r0",
+          "sql-before_begin-strict-r1",
+          "sql-before_begin-strict-r2"
+        ],
+        "witness_matches_original_observations": true,
+        "witness_matches_saved_control": true,
+        "forged_witness_rejected": true,
+        "limits": "Checks a source-to-record mapping and logical support, not source authenticity or a new SQLite run."
+      },
+      "passed": true,
+      "console_entrypoint": {
+        "executable": "/workspace/scratch/08f9419d4225/clean_validation/venv-sourcebuild-3.10.22/bin/fab-evidence-audit",
+        "exit_code": 0,
+        "stdout": "{\"state\": \"PASS\", \"witness\": {\"config_id\": \"a\", \"context\": \"target\", \"record_ids\": [\"a0\", \"a1\"]}}\n",
+        "stderr": "",
+        "passed": true
+      }
+    }
+  ],
+  "existing_result_files_count": 41,
+  "existing_result_files_unchanged": true,
+  "artifact_hashes_unchanged": true,
+  "all_passed": true,
+  "finished_at_utc": "2026-10-24T05:49:11.962112+00:00",
+  "sdist_documentation_and_test_members": [
+    {
+      "member": "fab_evidence_audit-0.1.1/tests/test_api.py",
+      "same_as_final_source": true,
+      "sha256": "05c95af6cb250c6ef3584dcfc836526f6f245df8016893539b111595bb9fade0"
+    },
+    {
+      "member": "fab_evidence_audit-0.1.1/tests/test_cli.py",
+      "same_as_final_source": true,
+      "sha256": "8622710bc628d2ff012b875a264038b0664d3d13ca16d879b50a7df0540f6a6a"
+    },
+    {
+      "member": "fab_evidence_audit-0.1.1/tests/test_resource_limits.py",
+      "same_as_final_source": true,
+      "sha256": "09b2c2242ee04a961f27ab213e3ad0d3287fc9c6c167654ebc7b5b3116232cc1"
+    },
+    {
+      "member": "fab_evidence_audit-0.1.1/tests/test_witness_contract.py",
+      "same_as_final_source": true,
+      "sha256": "3b79bea95d74ae342f77998e8caf17801a2e0dae90d7b59e31cf84c8b4562c03"
+    },
+    {
+      "member": "fab_evidence_audit-0.1.1/docs/walkthrough.md",
+      "same_as_final_source": true,
+      "sha256": "8318536de040fb5981f68ce7db68da40b4d08ad29676a4cc63116bdb5da55e11"
+    },
+    {
+      "member": "fab_evidence_audit-0.1.1/docs/reproduction.md",
+      "same_as_final_source": true,
+      "sha256": "754be27c6966f20f4d8cfc8280a1c7e0a3a9be2cccf814f331101804f2629153"
+    },
+    {
+      "member": "fab_evidence_audit-0.1.1/pyproject.toml",
+      "same_as_final_source": true,
+      "sha256": "eb5277f4e7633d0b2e55407dbb7ab4d965e7260c8ce1ded08ba68e5c5150d400"
+    },
+    {
+      "member": "fab_evidence_audit-0.1.1/README.md",
+      "same_as_final_source": true,
+      "sha256": "b4e2eb884718e8da78bf846a5477f82c8b4df7366a78a2198c940ca2aea31c44"
+    }
+  ],
+  "console_entrypoints_passed": true,
+  "not_executed_python_minor_versions": [
+    "3.11",
+    "3.13",
+    "3.14"
+  ],
+  "compatibility_claim_limit": "The declared minimum 3.10 was exercised at 3.10.22, alongside two 3.12 distributions. This does not establish compatibility with every intermediate or newer Python minor release, operating system, or host.",
+  "network_acquisitions": [
+    {
+      "url": "https://www.python.org/ftp/python/3.10.22/Python-3.10.22.tar.xz",
+      "sha256": "c61fe9b1a1a7ec2a0b0388e664187c378a5325a89e3606d220abf5bdfccb2543",
+      "purpose": "Build the declared minimum Python series in a separate local prefix; no additional package-index download was needed."
+    }
+  ],
+  "existing_result_files_sha256_after_validation": {
+    "results/context_v0_2/confusion.csv": "166ecab8f42dd816c0671538bff3ab670448878a828c6fecd478211ab87081a9",
+    "results/context_v0_2/examples.json": "daa79c8ab9ccabe09c875c3704a6c85713c00b8da96e558c6b72021ff81e0f0a",
+    "results/context_v0_2/predictions.csv.gz": "164eed18b8889f2cce4abf3cf2e86df9b26717ad9d2369779a7c19578093a91e",
+    "results/context_v0_2/protocol_frozen.json": "727b0723b6024cd7641d98e777effabf601b309e520443ac8a40acecd563b411",
+    "results/context_v0_2/summary.json": "50faf7be2f6f27d02696563db6e2b2ac137d4f1af6dc498432ee19a33cee0f95",
+    "results/context_v0_2/tasks.jsonl.gz": "8857b83f4b2ccfe1e6ecd064c3db2ac9504835e7c29e7e80e06bf9b6bdb7c3f8",
+    "results/context_v0_2/witnesses.jsonl": "c6f4b2e77f38a1ec9342e70c12be5f7383061b9c31d7d5d925e601445c6aaace",
+    "results/context_v0_2_refined/audit_report.json": "19b072c14d3cf168944251a731438780ab233a2bca7d4bea52f3341470aaceb6",
+    "results/context_v0_2_refined/confusion.csv": "cf1f4aae04f1cf0cd9a597772bfa87ff23d7031d6d4e103a099a4f2b40b46cc9",
+    "results/context_v0_2_refined/examples.json": "87f4995beff81e80b694fea68efa53681763a10a6e7bd636248feb1d61425c3f",
+    "results/context_v0_2_refined/predictions.csv.gz": "6bbb7db026de2d42222072c8e7bd2934237946f7867f538c685d32c5481ec51d",
+    "results/context_v0_2_refined/protocol_frozen.json": "45cf324139a12aaa4a11abab3027f0023e87def51dcd8a27f8d363657ddaada7",
+    "results/context_v0_2_refined/summary.json": "c719fe337bc2804b5166536180d5bafbb7b8c01400f14c0f0d5064bb986460a0",
+    "results/context_v0_2_refined/tasks.jsonl.gz": "3f37fa4bfd56fdbc2603809eee2540baee5df45c6694c2731c6fa01273cc2e63",
+    "results/context_v0_2_refined/witnesses.jsonl": "c6f4b2e77f38a1ec9342e70c12be5f7383061b9c31d7d5d925e601445c6aaace",
+    "results/decimal_v0_4/audit_report.json": "4477b7529e741e024b50841fe285402ecb6e08665249d16baaf1ddc3dd41933d",
+    "results/decimal_v0_4/decimal_reference.json": "971a3d4462a73ce59313e042ff31039c31479edff42a9fb0be78c94568d7699f",
+    "results/decimal_v0_4/observations.json": "c1c417d20f321678250f0276ca194d769a0e8966456fe88f42acaf3e1fae1b11",
+    "results/decimal_v0_4/predictions.json": "f039bad5911f0da9dd0168b374b95057f01282185a8b5cc18d282312da0d3a84",
+    "results/decimal_v0_4/protocol_frozen.json": "5c8269f322e183b1cb32ebe63fdbf866d0f4a12fedce98e76d8bf3cbc2b2fb11",
+    "results/decimal_v0_4/runtime.json": "3bf20ee52881fdf0c1dfb542e2c3f0b2094ad6aa4160dfb0d502a5155079a1ba",
+    "results/decimal_v0_4/summary.json": "d945e7fd099dc0384369d94142c40a1df00f429a43c44835012ad0a73dc41c5a",
+    "results/decimal_v0_4/tasks.jsonl": "e270cb63020c3dc3f0721fe8983268109e81bbd965d777a43d3b26f4dfdc4b60",
+    "results/pilot_v0_1/audit_report.json": "a0d4721779d067d75be814ee5d673a5b8349d6f7f473ad505448d384ba8aabf5",
+    "results/pilot_v0_1/confusion.csv": "373fb8bb521af48f25c6e5af5af827bdbfce544bdb39bbcfd58cbd693c141480",
+    "results/pilot_v0_1/counterexamples.json": "a4a347a2df3cc69b791bb62f420250bce7cda1115dece6d20a0ab6ab1f818a8e",
+    "results/pilot_v0_1/cross_system_cases.csv.gz": "a8d0b1f4c7f5abbc24fde7e2497e32dfb044d346901a3899ec9b2e07719956c6",
+    "results/pilot_v0_1/cross_system_summary.csv": "5a2f1cf2ce5047679be6235b1c8b87346238db019a2d750737d064ddcf37b22b",
+    "results/pilot_v0_1/protocol_frozen.json": "c7a89c32e9a3fe6798be6e66bce96e08b16efda9ce2d01e0c0b039afad34fea9",
+    "results/pilot_v0_1/single_system_cases.csv.gz": "e59fe450c51cfcdd80b15c6d3f8a90798ecf8bac04c9fc8da79eb92258e512e3",
+    "results/pilot_v0_1/summary.json": "9a4b557407c17ff6dd6e03d554c3c5b8381dec3a6c266422f7070a443db36025",
+    "results/sqlite_v0_3/audit_report.json": "88171b9f91f6c5729dcff1798010fd47948ff64cd1d8e5ac5aae7937c7c4e701",
+    "results/sqlite_v0_3/conditions.json": "51a6bf8d43034ddf07176bd38aea165ca89366912854bc36224d462a72b4e2c9",
+    "results/sqlite_v0_3/observations.json": "c5fb88b7541b4b81a83c065d25993dee00b1a9b528717b08edf3b52e912b037f",
+    "results/sqlite_v0_3/predictions.json": "c3962c7ca8dc77d8c135d14501b08c7e312edcc7a241ee8268c4e49b1fa61491",
+    "results/sqlite_v0_3/protocol_frozen.json": "16909a3d2e6a6ba0a0bc59cc2ceb67d0662a8eaeebb83981ff419108ab1e7498",
+    "results/sqlite_v0_3/runtime.json": "8b35cc1a2257ba57dd3c3fa90f9861ecf630aba88eb41ee91d87898f127353e7",
+    "results/sqlite_v0_3/sql_templates.json": "ba011d50568c08f4211d5257674d612a6718d9b7a13888faa1ef9dc726148a76",
+    "results/sqlite_v0_3/sqlite_reference.json": "0d5c450187a7cc27812dc2258c975919e9424ad51ff23e3d6c5beabb45cc2e1f",
+    "results/sqlite_v0_3/summary.json": "081634fde7c2571bf53f0eb04fdc77747d393f22ec056a4ad40c05fe45da3cf1",
+    "results/sqlite_v0_3/tasks.jsonl": "4741608969132c54364ad23af1bdc6deb65570cd78319229c0d66c8b120e276d"
+  }
+}

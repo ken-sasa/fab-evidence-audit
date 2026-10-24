@@ -1,0 +1,390 @@
+[
+  {
+    "record_id": "sql-before_begin-strict-r0",
+    "requirement": 0,
+    "requirement_text": "reject orphan foreign key insertion",
+    "task_pointer": "/records/0",
+    "observation_file": "observations.json",
+    "observation_pointer": "/0",
+    "condition_file": "conditions.json",
+    "condition_pointer": "/0",
+    "condition_id": "primary-before_begin-strict",
+    "requested_settings": {
+      "foreign_keys": 1,
+      "ignore_check_constraints": 0
+    },
+    "schema_sha256": "050ef74834aaab717e3153036937e53ad1cd4936b51abf93f5160a909a1720e1",
+    "derived_result": "PASS",
+    "in_target_context": true,
+    "in_witness": true,
+    "raw_observation": {
+      "record_id": "sql-before_begin-strict-r0",
+      "config_id": "strict",
+      "context": "before_begin",
+      "requirement": 0,
+      "expected_constraint": "SQLITE_CONSTRAINT_FOREIGNKEY",
+      "effective": {
+        "foreign_keys": [
+          1
+        ],
+        "ignore_check_constraints": [
+          0
+        ]
+      },
+      "in_transaction": true,
+      "result": "PASS",
+      "initial_count": 0,
+      "control_count": 1,
+      "control_row": [
+        1,
+        1,
+        1,
+        "base"
+      ],
+      "control_accepted": true,
+      "violating_write": "rejected",
+      "exception_name": "SQLITE_CONSTRAINT_FOREIGNKEY",
+      "exception_code": 787,
+      "final_count": 1,
+      "cleanup_count": 0,
+      "cleanup_transaction_active": true,
+      "sql_trace": [
+        "PRAGMA foreign_keys",
+        "PRAGMA ignore_check_constraints",
+        "SAVEPOINT probe",
+        "SELECT COUNT(*) FROM child",
+        "INSERT INTO child VALUES(1,1,1,'base')",
+        "SELECT COUNT(*) FROM child",
+        "SELECT * FROM child WHERE id=1",
+        "INSERT INTO child VALUES(2,999,1,'new')",
+        "SELECT COUNT(*) FROM child",
+        "ROLLBACK TO probe",
+        "RELEASE probe",
+        "SELECT COUNT(*) FROM child"
+      ]
+    }
+  },
+  {
+    "record_id": "sql-before_begin-strict-r1",
+    "requirement": 1,
+    "requirement_text": "reject CHECK(value>0) violation",
+    "task_pointer": "/records/1",
+    "observation_file": "observations.json",
+    "observation_pointer": "/1",
+    "condition_file": "conditions.json",
+    "condition_pointer": "/0",
+    "condition_id": "primary-before_begin-strict",
+    "requested_settings": {
+      "foreign_keys": 1,
+      "ignore_check_constraints": 0
+    },
+    "schema_sha256": "050ef74834aaab717e3153036937e53ad1cd4936b51abf93f5160a909a1720e1",
+    "derived_result": "PASS",
+    "in_target_context": true,
+    "in_witness": true,
+    "raw_observation": {
+      "record_id": "sql-before_begin-strict-r1",
+      "config_id": "strict",
+      "context": "before_begin",
+      "requirement": 1,
+      "expected_constraint": "SQLITE_CONSTRAINT_CHECK",
+      "effective": {
+        "foreign_keys": [
+          1
+        ],
+        "ignore_check_constraints": [
+          0
+        ]
+      },
+      "in_transaction": true,
+      "result": "PASS",
+      "initial_count": 0,
+      "control_count": 1,
+      "control_row": [
+        1,
+        1,
+        1,
+        "base"
+      ],
+      "control_accepted": true,
+      "violating_write": "rejected",
+      "exception_name": "SQLITE_CONSTRAINT_CHECK",
+      "exception_code": 275,
+      "final_count": 1,
+      "cleanup_count": 0,
+      "cleanup_transaction_active": true,
+      "sql_trace": [
+        "PRAGMA foreign_keys",
+        "PRAGMA ignore_check_constraints",
+        "SAVEPOINT probe",
+        "SELECT COUNT(*) FROM child",
+        "INSERT INTO child VALUES(1,1,1,'base')",
+        "SELECT COUNT(*) FROM child",
+        "SELECT * FROM child WHERE id=1",
+        "INSERT INTO child VALUES(2,1,-1,'new')",
+        "SELECT COUNT(*) FROM child",
+        "ROLLBACK TO probe",
+        "RELEASE probe",
+        "SELECT COUNT(*) FROM child"
+      ]
+    }
+  },
+  {
+    "record_id": "sql-before_begin-strict-r2",
+    "requirement": 2,
+    "requirement_text": "reject duplicate non-null UNIQUE token",
+    "task_pointer": "/records/2",
+    "observation_file": "observations.json",
+    "observation_pointer": "/2",
+    "condition_file": "conditions.json",
+    "condition_pointer": "/0",
+    "condition_id": "primary-before_begin-strict",
+    "requested_settings": {
+      "foreign_keys": 1,
+      "ignore_check_constraints": 0
+    },
+    "schema_sha256": "050ef74834aaab717e3153036937e53ad1cd4936b51abf93f5160a909a1720e1",
+    "derived_result": "PASS",
+    "in_target_context": true,
+    "in_witness": true,
+    "raw_observation": {
+      "record_id": "sql-before_begin-strict-r2",
+      "config_id": "strict",
+      "context": "before_begin",
+      "requirement": 2,
+      "expected_constraint": "SQLITE_CONSTRAINT_UNIQUE",
+      "effective": {
+        "foreign_keys": [
+          1
+        ],
+        "ignore_check_constraints": [
+          0
+        ]
+      },
+      "in_transaction": true,
+      "result": "PASS",
+      "initial_count": 0,
+      "control_count": 1,
+      "control_row": [
+        1,
+        1,
+        1,
+        "base"
+      ],
+      "control_accepted": true,
+      "violating_write": "rejected",
+      "exception_name": "SQLITE_CONSTRAINT_UNIQUE",
+      "exception_code": 2067,
+      "final_count": 1,
+      "cleanup_count": 0,
+      "cleanup_transaction_active": true,
+      "sql_trace": [
+        "PRAGMA foreign_keys",
+        "PRAGMA ignore_check_constraints",
+        "SAVEPOINT probe",
+        "SELECT COUNT(*) FROM child",
+        "INSERT INTO child VALUES(1,1,1,'base')",
+        "SELECT COUNT(*) FROM child",
+        "SELECT * FROM child WHERE id=1",
+        "INSERT INTO child VALUES(2,1,1,'base')",
+        "SELECT COUNT(*) FROM child",
+        "ROLLBACK TO probe",
+        "RELEASE probe",
+        "SELECT COUNT(*) FROM child"
+      ]
+    }
+  },
+  {
+    "record_id": "sql-after_begin-strict-r0",
+    "requirement": 0,
+    "requirement_text": "reject orphan foreign key insertion",
+    "task_pointer": "/records/3",
+    "observation_file": "observations.json",
+    "observation_pointer": "/12",
+    "condition_file": "conditions.json",
+    "condition_pointer": "/4",
+    "condition_id": "primary-after_begin-strict",
+    "requested_settings": {
+      "foreign_keys": 1,
+      "ignore_check_constraints": 0
+    },
+    "schema_sha256": "050ef74834aaab717e3153036937e53ad1cd4936b51abf93f5160a909a1720e1",
+    "derived_result": "FAIL",
+    "in_target_context": false,
+    "in_witness": false,
+    "raw_observation": {
+      "record_id": "sql-after_begin-strict-r0",
+      "config_id": "strict",
+      "context": "after_begin",
+      "requirement": 0,
+      "expected_constraint": "SQLITE_CONSTRAINT_FOREIGNKEY",
+      "effective": {
+        "foreign_keys": [
+          0
+        ],
+        "ignore_check_constraints": [
+          0
+        ]
+      },
+      "in_transaction": true,
+      "result": "FAIL",
+      "initial_count": 0,
+      "control_count": 1,
+      "control_row": [
+        1,
+        1,
+        1,
+        "base"
+      ],
+      "control_accepted": true,
+      "violating_write": "accepted",
+      "final_count": 2,
+      "cleanup_count": 0,
+      "cleanup_transaction_active": true,
+      "sql_trace": [
+        "PRAGMA foreign_keys",
+        "PRAGMA ignore_check_constraints",
+        "SAVEPOINT probe",
+        "SELECT COUNT(*) FROM child",
+        "INSERT INTO child VALUES(1,1,1,'base')",
+        "SELECT COUNT(*) FROM child",
+        "SELECT * FROM child WHERE id=1",
+        "INSERT INTO child VALUES(2,999,1,'new')",
+        "SELECT COUNT(*) FROM child",
+        "ROLLBACK TO probe",
+        "RELEASE probe",
+        "SELECT COUNT(*) FROM child"
+      ]
+    }
+  },
+  {
+    "record_id": "sql-after_begin-strict-r1",
+    "requirement": 1,
+    "requirement_text": "reject CHECK(value>0) violation",
+    "task_pointer": "/records/4",
+    "observation_file": "observations.json",
+    "observation_pointer": "/13",
+    "condition_file": "conditions.json",
+    "condition_pointer": "/4",
+    "condition_id": "primary-after_begin-strict",
+    "requested_settings": {
+      "foreign_keys": 1,
+      "ignore_check_constraints": 0
+    },
+    "schema_sha256": "050ef74834aaab717e3153036937e53ad1cd4936b51abf93f5160a909a1720e1",
+    "derived_result": "PASS",
+    "in_target_context": false,
+    "in_witness": false,
+    "raw_observation": {
+      "record_id": "sql-after_begin-strict-r1",
+      "config_id": "strict",
+      "context": "after_begin",
+      "requirement": 1,
+      "expected_constraint": "SQLITE_CONSTRAINT_CHECK",
+      "effective": {
+        "foreign_keys": [
+          0
+        ],
+        "ignore_check_constraints": [
+          0
+        ]
+      },
+      "in_transaction": true,
+      "result": "PASS",
+      "initial_count": 0,
+      "control_count": 1,
+      "control_row": [
+        1,
+        1,
+        1,
+        "base"
+      ],
+      "control_accepted": true,
+      "violating_write": "rejected",
+      "exception_name": "SQLITE_CONSTRAINT_CHECK",
+      "exception_code": 275,
+      "final_count": 1,
+      "cleanup_count": 0,
+      "cleanup_transaction_active": true,
+      "sql_trace": [
+        "PRAGMA foreign_keys",
+        "PRAGMA ignore_check_constraints",
+        "SAVEPOINT probe",
+        "SELECT COUNT(*) FROM child",
+        "INSERT INTO child VALUES(1,1,1,'base')",
+        "SELECT COUNT(*) FROM child",
+        "SELECT * FROM child WHERE id=1",
+        "INSERT INTO child VALUES(2,1,-1,'new')",
+        "SELECT COUNT(*) FROM child",
+        "ROLLBACK TO probe",
+        "RELEASE probe",
+        "SELECT COUNT(*) FROM child"
+      ]
+    }
+  },
+  {
+    "record_id": "sql-after_begin-strict-r2",
+    "requirement": 2,
+    "requirement_text": "reject duplicate non-null UNIQUE token",
+    "task_pointer": "/records/5",
+    "observation_file": "observations.json",
+    "observation_pointer": "/14",
+    "condition_file": "conditions.json",
+    "condition_pointer": "/4",
+    "condition_id": "primary-after_begin-strict",
+    "requested_settings": {
+      "foreign_keys": 1,
+      "ignore_check_constraints": 0
+    },
+    "schema_sha256": "050ef74834aaab717e3153036937e53ad1cd4936b51abf93f5160a909a1720e1",
+    "derived_result": "PASS",
+    "in_target_context": false,
+    "in_witness": false,
+    "raw_observation": {
+      "record_id": "sql-after_begin-strict-r2",
+      "config_id": "strict",
+      "context": "after_begin",
+      "requirement": 2,
+      "expected_constraint": "SQLITE_CONSTRAINT_UNIQUE",
+      "effective": {
+        "foreign_keys": [
+          0
+        ],
+        "ignore_check_constraints": [
+          0
+        ]
+      },
+      "in_transaction": true,
+      "result": "PASS",
+      "initial_count": 0,
+      "control_count": 1,
+      "control_row": [
+        1,
+        1,
+        1,
+        "base"
+      ],
+      "control_accepted": true,
+      "violating_write": "rejected",
+      "exception_name": "SQLITE_CONSTRAINT_UNIQUE",
+      "exception_code": 2067,
+      "final_count": 1,
+      "cleanup_count": 0,
+      "cleanup_transaction_active": true,
+      "sql_trace": [
+        "PRAGMA foreign_keys",
+        "PRAGMA ignore_check_constraints",
+        "SAVEPOINT probe",
+        "SELECT COUNT(*) FROM child",
+        "INSERT INTO child VALUES(1,1,1,'base')",
+        "SELECT COUNT(*) FROM child",
+        "SELECT * FROM child WHERE id=1",
+        "INSERT INTO child VALUES(2,1,1,'base')",
+        "SELECT COUNT(*) FROM child",
+        "ROLLBACK TO probe",
+        "RELEASE probe",
+        "SELECT COUNT(*) FROM child"
+      ]
+    }
+  }
+]

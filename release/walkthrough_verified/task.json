@@ -1,0 +1,60 @@
+{
+  "task_id": "complete-before_begin-strict-both_with_unique",
+  "family": "complete",
+  "formula_id": "both_with_unique",
+  "formula": [
+    "AND",
+    0,
+    1,
+    2
+  ],
+  "requirements": 3,
+  "configs": [
+    "strict"
+  ],
+  "target_context": "before_begin",
+  "records": [
+    {
+      "config_id": "strict",
+      "context": "before_begin",
+      "requirement": 0,
+      "result": "PASS",
+      "record_id": "sql-before_begin-strict-r0"
+    },
+    {
+      "config_id": "strict",
+      "context": "before_begin",
+      "requirement": 1,
+      "result": "PASS",
+      "record_id": "sql-before_begin-strict-r1"
+    },
+    {
+      "config_id": "strict",
+      "context": "before_begin",
+      "requirement": 2,
+      "result": "PASS",
+      "record_id": "sql-before_begin-strict-r2"
+    },
+    {
+      "config_id": "strict",
+      "context": "after_begin",
+      "requirement": 0,
+      "result": "FAIL",
+      "record_id": "sql-after_begin-strict-r0"
+    },
+    {
+      "config_id": "strict",
+      "context": "after_begin",
+      "requirement": 1,
+      "result": "PASS",
+      "record_id": "sql-after_begin-strict-r1"
+    },
+    {
+      "config_id": "strict",
+      "context": "after_begin",
+      "requirement": 2,
+      "result": "PASS",
+      "record_id": "sql-after_begin-strict-r2"
+    }
+  ]
+}

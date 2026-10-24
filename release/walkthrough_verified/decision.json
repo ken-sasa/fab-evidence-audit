@@ -1,0 +1,12 @@
+{
+  "state": "PASS",
+  "witness": {
+    "config_id": "strict",
+    "context": "before_begin",
+    "record_ids": [
+      "sql-before_begin-strict-r0",
+      "sql-before_begin-strict-r1",
+      "sql-before_begin-strict-r2"
+    ]
+  }
+}

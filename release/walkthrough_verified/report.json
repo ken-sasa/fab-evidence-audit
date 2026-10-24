@@ -1,0 +1,35 @@
+{
+  "scope": "Reuse walkthrough over saved observations only; no new SQL measurement or independent sample.",
+  "installed_version": "0.1.1",
+  "installed_root": "/workspace/scratch/08f9419d4225/clean_validation/venv-system-3.12.3/lib/python3.12/site-packages",
+  "isolated_cli_no_source_fallback": true,
+  "cli_exit_code": 0,
+  "source_archive": "/workspace/scratch/08f9419d4225/fab_logic_study/results/sqlite_v0_3",
+  "source_sha256": {
+    "observations.json": "c5fb88b7541b4b81a83c065d25993dee00b1a9b528717b08edf3b52e912b037f",
+    "conditions.json": "51a6bf8d43034ddf07176bd38aea165ca89366912854bc36224d462a72b4e2c9",
+    "protocol_frozen.json": "16909a3d2e6a6ba0a0bc59cc2ceb67d0662a8eaeebb83981ff419108ab1e7498",
+    "tasks.jsonl": "4741608969132c54364ad23af1bdc6deb65570cd78319229c0d66c8b120e276d",
+    "predictions.json": "c3962c7ca8dc77d8c135d14501b08c7e312edcc7a241ee8268c4e49b1fa61491"
+  },
+  "walkthrough_source_sha256": "5b1c38d3a9833b7bafc6ceb19a5b3203d5d1eea735d919ef4d054d24db7742b0",
+  "installed_source_sha256": {
+    "__init__.py": "8ef6c5b3e8e482fd0b612bc96076a691bbfdff1f1d33be2a917eaaa2056a590d",
+    "api.py": "0837d91e70ac9a5a9c1f4f7baf231a0f5413503f58ae29400f4b9ab1abbed184",
+    "cli.py": "316efebfcf3e4af44b75ca4c69d27e8b35fc47fc52e63b3df50d99427d1de88f",
+    "_core.py": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8"
+  },
+  "task_id": "complete-before_begin-strict-both_with_unique",
+  "raw_derived_records": 6,
+  "archived_task_exact_match": true,
+  "decision": "PASS",
+  "witness_record_ids": [
+    "sql-before_begin-strict-r0",
+    "sql-before_begin-strict-r1",
+    "sql-before_begin-strict-r2"
+  ],
+  "witness_matches_original_observations": true,
+  "witness_matches_saved_control": true,
+  "forged_witness_rejected": true,
+  "limits": "Checks a source-to-record mapping and logical support, not source authenticity or a new SQLite run."
+}
