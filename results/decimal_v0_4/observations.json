@@ -1,0 +1,2862 @@
+[
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-high_trap-r0",
+    "config_id": "high_trap",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 0,
+    "result": "PASS",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "1.23",
+    "control": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "1.2346",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "exponent": -4
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-high_trap-r1",
+    "config_id": "high_trap",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 1,
+    "result": "FAIL",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "2",
+    "control": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-high_trap-r2",
+    "config_id": "high_trap",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 2,
+    "result": "PASS",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "0.25",
+    "control": {
+      "outcome": "return",
+      "value": "0.25",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2,
+          5
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "exception",
+      "value": null,
+      "tuple": null,
+      "finite": null,
+      "exception": {
+        "type": "Inexact",
+        "module": "decimal",
+        "message": "[<class 'decimal.Inexact'>]",
+        "is_exact_Inexact": true
+      },
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-high_open-r0",
+    "config_id": "high_open",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 0,
+    "result": "PASS",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "1.23",
+    "control": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "1.2346",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "exponent": -4
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-high_open-r1",
+    "config_id": "high_open",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 1,
+    "result": "FAIL",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "2",
+    "control": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-high_open-r2",
+    "config_id": "high_open",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 2,
+    "result": "FAIL",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "0.25",
+    "control": {
+      "outcome": "return",
+      "value": "0.25",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2,
+          5
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "0.333333",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "exponent": -6
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-low_trap-r0",
+    "config_id": "low_trap",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 0,
+    "result": "FAIL",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "1.23",
+    "control": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "exception",
+      "value": null,
+      "tuple": null,
+      "finite": null,
+      "exception": {
+        "type": "Inexact",
+        "module": "decimal",
+        "message": "[<class 'decimal.Inexact'>]",
+        "is_exact_Inexact": true
+      },
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-low_trap-r1",
+    "config_id": "low_trap",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 1,
+    "result": "FAIL",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "2",
+    "control": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-low_trap-r2",
+    "config_id": "low_trap",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 2,
+    "result": "PASS",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "0.25",
+    "control": {
+      "outcome": "return",
+      "value": "0.25",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2,
+          5
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "exception",
+      "value": null,
+      "tuple": null,
+      "finite": null,
+      "exception": {
+        "type": "Inexact",
+        "module": "decimal",
+        "message": "[<class 'decimal.Inexact'>]",
+        "is_exact_Inexact": true
+      },
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-low_open-r0",
+    "config_id": "low_open",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 0,
+    "result": "FAIL",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "1.23",
+    "control": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-low_open-r1",
+    "config_id": "low_open",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 1,
+    "result": "FAIL",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "2",
+    "control": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_EVEN-low_open-r2",
+    "config_id": "low_open",
+    "context": "ROUND_HALF_EVEN",
+    "requirement": 2,
+    "result": "FAIL",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "0.25",
+    "control": {
+      "outcome": "return",
+      "value": "0.25",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2,
+          5
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "0.333",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          3,
+          3,
+          3
+        ],
+        "exponent": -3
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-high_trap-r0",
+    "config_id": "high_trap",
+    "context": "ROUND_HALF_UP",
+    "requirement": 0,
+    "result": "PASS",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "1.23",
+    "control": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "1.2346",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "exponent": -4
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-high_trap-r1",
+    "config_id": "high_trap",
+    "context": "ROUND_HALF_UP",
+    "requirement": 1,
+    "result": "PASS",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "2",
+    "control": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "3",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          3
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-high_trap-r2",
+    "config_id": "high_trap",
+    "context": "ROUND_HALF_UP",
+    "requirement": 2,
+    "result": "PASS",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "0.25",
+    "control": {
+      "outcome": "return",
+      "value": "0.25",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2,
+          5
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "exception",
+      "value": null,
+      "tuple": null,
+      "finite": null,
+      "exception": {
+        "type": "Inexact",
+        "module": "decimal",
+        "message": "[<class 'decimal.Inexact'>]",
+        "is_exact_Inexact": true
+      },
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-high_open-r0",
+    "config_id": "high_open",
+    "context": "ROUND_HALF_UP",
+    "requirement": 0,
+    "result": "PASS",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "1.23",
+    "control": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "1.2346",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "exponent": -4
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-high_open-r1",
+    "config_id": "high_open",
+    "context": "ROUND_HALF_UP",
+    "requirement": 1,
+    "result": "PASS",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "2",
+    "control": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "3",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          3
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-high_open-r2",
+    "config_id": "high_open",
+    "context": "ROUND_HALF_UP",
+    "requirement": 2,
+    "result": "FAIL",
+    "effective": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 6,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "0.25",
+    "control": {
+      "outcome": "return",
+      "value": "0.25",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2,
+          5
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "0.333333",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "exponent": -6
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-low_trap-r0",
+    "config_id": "low_trap",
+    "context": "ROUND_HALF_UP",
+    "requirement": 0,
+    "result": "FAIL",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "1.23",
+    "control": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "exception",
+      "value": null,
+      "tuple": null,
+      "finite": null,
+      "exception": {
+        "type": "Inexact",
+        "module": "decimal",
+        "message": "[<class 'decimal.Inexact'>]",
+        "is_exact_Inexact": true
+      },
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-low_trap-r1",
+    "config_id": "low_trap",
+    "context": "ROUND_HALF_UP",
+    "requirement": 1,
+    "result": "PASS",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "2",
+    "control": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "3",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          3
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-low_trap-r2",
+    "config_id": "low_trap",
+    "context": "ROUND_HALF_UP",
+    "requirement": 2,
+    "result": "PASS",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "0.25",
+    "control": {
+      "outcome": "return",
+      "value": "0.25",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2,
+          5
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "exception",
+      "value": null,
+      "tuple": null,
+      "finite": null,
+      "exception": {
+        "type": "Inexact",
+        "module": "decimal",
+        "message": "[<class 'decimal.Inexact'>]",
+        "is_exact_Inexact": true
+      },
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-low_open-r0",
+    "config_id": "low_open",
+    "context": "ROUND_HALF_UP",
+    "requirement": 0,
+    "result": "FAIL",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "1.23",
+    "control": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "1.23",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          1,
+          2,
+          3
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-low_open-r1",
+    "config_id": "low_open",
+    "context": "ROUND_HALF_UP",
+    "requirement": 1,
+    "result": "PASS",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "2",
+    "control": {
+      "outcome": "return",
+      "value": "2",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "3",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          3
+        ],
+        "exponent": 0
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    }
+  },
+  {
+    "record_id": "decimal-ROUND_HALF_UP-low_open-r2",
+    "config_id": "low_open",
+    "context": "ROUND_HALF_UP",
+    "requirement": 2,
+    "result": "FAIL",
+    "effective": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "effective_after": {
+      "prec": 3,
+      "rounding": "ROUND_HALF_UP",
+      "Emin": -999,
+      "Emax": 999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      }
+    },
+    "control_expected": "0.25",
+    "control": {
+      "outcome": "return",
+      "value": "0.25",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          2,
+          5
+        ],
+        "exponent": -2
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "passed": true
+    },
+    "probe": {
+      "outcome": "return",
+      "value": "0.333",
+      "tuple": {
+        "sign": 0,
+        "digits": [
+          3,
+          3,
+          3
+        ],
+        "exponent": -3
+      },
+      "finite": true,
+      "exception": null,
+      "flags_before": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": false,
+        "Rounded": false,
+        "Clamped": false
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    }
+  }
+]

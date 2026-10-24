@@ -1,0 +1,95 @@
+{
+  "protocol_sha256": "5c8269f322e183b1cb32ebe63fdbf866d0f4a12fedce98e76d8bf3cbc2b2fb11",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "decimal_version": "1.70",
+    "libmpdec_version": "4.0.0",
+    "decimal_class_module": "decimal",
+    "package_version": "0.1.0",
+    "started_at_utc": "2026-10-24T04:49:28.352061+00:00",
+    "backend": "_decimal C"
+  },
+  "measured_probe_cells": 24,
+  "conditions": 8,
+  "queries": 128,
+  "query_families": {
+    "complete": 120,
+    "withheld": 8
+  },
+  "observed_states": {
+    "PASS": 12,
+    "FAIL": 12
+  },
+  "gold_counts": {
+    "PASS": 69,
+    "FAIL": 56,
+    "UNKNOWN": 3
+  },
+  "metrics": {
+    "witness_evaluator": {
+      "correct": 128,
+      "false_pass": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 0,
+      "excess_error": 0,
+      "hidden_error": 0
+    },
+    "relational_reference": {
+      "correct": 128,
+      "false_pass": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 0,
+      "excess_error": 0,
+      "hidden_error": 0
+    },
+    "config_only_conservative": {
+      "correct": 62,
+      "false_pass": 0,
+      "unknown_to_pass": 2,
+      "unknown_to_fail": 0,
+      "excess_error": 64,
+      "hidden_error": 0
+    },
+    "context_only_conservative": {
+      "correct": 40,
+      "false_pass": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 0,
+      "excess_error": 88,
+      "hidden_error": 0
+    },
+    "optimistic_pool": {
+      "correct": 93,
+      "false_pass": 32,
+      "unknown_to_pass": 3,
+      "unknown_to_fail": 0,
+      "excess_error": 0,
+      "hidden_error": 0
+    },
+    "missing_as_fail": {
+      "correct": 125,
+      "false_pass": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 3,
+      "excess_error": 0,
+      "hidden_error": 0
+    },
+    "sql_relational": {
+      "correct": 128,
+      "false_pass": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 0,
+      "excess_error": 0,
+      "hidden_error": 0
+    }
+  },
+  "files_sha256": {
+    "decimal_reference.json": "971a3d4462a73ce59313e042ff31039c31479edff42a9fb0be78c94568d7699f",
+    "observations.json": "c1c417d20f321678250f0276ca194d769a0e8966456fe88f42acaf3e1fae1b11",
+    "predictions.json": "f039bad5911f0da9dd0168b374b95057f01282185a8b5cc18d282312da0d3a84",
+    "protocol_frozen.json": "5c8269f322e183b1cb32ebe63fdbf866d0f4a12fedce98e76d8bf3cbc2b2fb11",
+    "runtime.json": "3bf20ee52881fdf0c1dfb542e2c3f0b2094ad6aa4160dfb0d502a5155079a1ba",
+    "tasks.jsonl": "e270cb63020c3dc3f0721fe8983268109e81bbd965d777a43d3b26f4dfdc4b60"
+  }
+}

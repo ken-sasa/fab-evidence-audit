@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FAB Evidence Audit task 0.1.0",
+  "type": "object",
+  "required": [
+    "formula",
+    "requirements",
+    "configs",
+    "target_context",
+    "records"
+  ],
+  "properties": {
+    "formula": {
+      "$ref": "#/$defs/formula"
+    },
+    "requirements": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16
+    },
+    "configs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 256
+      }
+    },
+    "target_context": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "records": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object",
+        "required": [
+          "config_id",
+          "context",
+          "requirement",
+          "result",
+          "record_id"
+        ],
+        "properties": {
+          "config_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "context": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "record_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "requirement": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 15
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "ERROR"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "formula": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        {
+          "type": "array",
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "enum": [
+                "AND",
+                "OR"
+              ]
+            }
+          ],
+          "items": {
+            "$ref": "#/$defs/formula"
+          }
+        }
+      ]
+    }
+  },
+  "$comment": "Runtime additionally checks leaf/record requirement domain, declared configs, unique record IDs and formula size/depth. Extra metadata fields are ignored."
+}

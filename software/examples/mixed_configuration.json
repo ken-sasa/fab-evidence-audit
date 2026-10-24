@@ -1,0 +1,43 @@
+{
+  "formula": [
+    "AND",
+    0,
+    1
+  ],
+  "requirements": 2,
+  "configs": [
+    "a",
+    "b"
+  ],
+  "target_context": "target",
+  "records": [
+    {
+      "record_id": "a0",
+      "config_id": "a",
+      "requirement": 0,
+      "result": "PASS",
+      "context": "target"
+    },
+    {
+      "record_id": "a1",
+      "config_id": "a",
+      "requirement": 1,
+      "result": "FAIL",
+      "context": "target"
+    },
+    {
+      "record_id": "b0",
+      "config_id": "b",
+      "requirement": 0,
+      "result": "FAIL",
+      "context": "target"
+    },
+    {
+      "record_id": "b1",
+      "config_id": "b",
+      "requirement": 1,
+      "result": "PASS",
+      "context": "target"
+    }
+  ]
+}

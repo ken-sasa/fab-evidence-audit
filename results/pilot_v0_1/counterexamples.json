@@ -1,0 +1,105 @@
+[
+  {
+    "formula": [
+      "AND",
+      0,
+      1
+    ],
+    "gold": "FAIL",
+    "name": "mean_false_pass",
+    "predictions": {
+      "mean_aggregation": "PASS",
+      "short_circuit": "FAIL",
+      "strict_four_state": "FAIL",
+      "zero_imputation": "FAIL"
+    },
+    "threshold": 3,
+    "values": [
+      4,
+      2
+    ]
+  },
+  {
+    "formula": [
+      "OR",
+      0,
+      1
+    ],
+    "gold": "PASS",
+    "name": "mean_false_fail",
+    "predictions": {
+      "mean_aggregation": "FAIL",
+      "short_circuit": "PASS",
+      "strict_four_state": "PASS",
+      "zero_imputation": "PASS"
+    },
+    "threshold": 3,
+    "values": [
+      4,
+      0
+    ]
+  },
+  {
+    "formula": [
+      "AND",
+      0,
+      1
+    ],
+    "gold": "UNKNOWN",
+    "name": "unknown_is_not_zero",
+    "predictions": {
+      "mean_aggregation": "FAIL",
+      "short_circuit": "UNKNOWN",
+      "strict_four_state": "UNKNOWN",
+      "zero_imputation": "FAIL"
+    },
+    "threshold": 3,
+    "values": [
+      4,
+      null
+    ]
+  },
+  {
+    "formula": [
+      "OR",
+      0,
+      1
+    ],
+    "gold": "ERROR",
+    "name": "error_cannot_hide_behind_success",
+    "predictions": {
+      "mean_aggregation": "FAIL",
+      "short_circuit": "PASS",
+      "strict_four_state": "ERROR",
+      "zero_imputation": "PASS"
+    },
+    "threshold": 3,
+    "values": [
+      4,
+      "ERROR"
+    ]
+  },
+  {
+    "consistent_score": 0,
+    "formula": [
+      "AND",
+      0,
+      1
+    ],
+    "gold": "FAIL",
+    "mixed_prediction": "PASS",
+    "mixed_score": 4,
+    "name": "different_systems_do_not_make_one_integrated_system",
+    "systems": [
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "threshold": 3
+  }
+]

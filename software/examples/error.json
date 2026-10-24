@@ -1,0 +1,35 @@
+{
+  "formula": [
+    "AND",
+    0,
+    1
+  ],
+  "requirements": 2,
+  "configs": [
+    "a"
+  ],
+  "target_context": "target",
+  "records": [
+    {
+      "record_id": "a0",
+      "config_id": "a",
+      "requirement": 0,
+      "result": "PASS",
+      "context": "target"
+    },
+    {
+      "record_id": "a1",
+      "config_id": "a",
+      "requirement": 1,
+      "result": "PASS",
+      "context": "target"
+    },
+    {
+      "record_id": "contradiction",
+      "config_id": "a",
+      "requirement": 0,
+      "result": "FAIL",
+      "context": "target"
+    }
+  ]
+}

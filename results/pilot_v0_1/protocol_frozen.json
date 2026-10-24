@@ -1,0 +1,199 @@
+{
+  "code_sha256": {
+    "engine.py": "94f82b142f7c9f754123b0f828152f4ec5e1301ea155dd6aa87b5f5b275253c2",
+    "oracle.py": "1067bd514b5f8e44d79f68a2ef7fec45e517d46565113df3df3a8b3cb9e63af7",
+    "run_pilot.py": "080625d487cdca87748cbf08dddcc9ae7e41df4fa36715746fe5496c49115ed8"
+  },
+  "comparators": [
+    "strict_four_state",
+    "zero_imputation",
+    "mean_aggregation",
+    "short_circuit",
+    "leafwise_best_across_systems"
+  ],
+  "cross_system_design": "Exactly two configurations; exhaustive 0..4 assignments for 2/3 leaves; 2000 uniform random ordered pairs with replacement per 4-leaf formula.",
+  "excluded": "NOT, cycles, changing applicability, resource coupling, shared latent constraints, real gadgets and real technology evidence.",
+  "formulas": [
+    {
+      "expression": [
+        "AND",
+        0,
+        1
+      ],
+      "leaves": 2,
+      "name": "AND2"
+    },
+    {
+      "expression": [
+        "OR",
+        0,
+        1
+      ],
+      "leaves": 2,
+      "name": "OR2"
+    },
+    {
+      "expression": [
+        "AND",
+        0,
+        1,
+        2
+      ],
+      "leaves": 3,
+      "name": "AND3"
+    },
+    {
+      "expression": [
+        "OR",
+        0,
+        1,
+        2
+      ],
+      "leaves": 3,
+      "name": "OR3"
+    },
+    {
+      "expression": [
+        "AND",
+        [
+          "OR",
+          0,
+          1
+        ],
+        2
+      ],
+      "leaves": 3,
+      "name": "AND_OR3"
+    },
+    {
+      "expression": [
+        "OR",
+        [
+          "AND",
+          0,
+          1
+        ],
+        2
+      ],
+      "leaves": 3,
+      "name": "OR_AND3"
+    },
+    {
+      "expression": [
+        "AND",
+        0,
+        1,
+        2,
+        3
+      ],
+      "leaves": 4,
+      "name": "AND4"
+    },
+    {
+      "expression": [
+        "OR",
+        0,
+        1,
+        2,
+        3
+      ],
+      "leaves": 4,
+      "name": "OR4"
+    },
+    {
+      "expression": [
+        "AND",
+        [
+          "OR",
+          0,
+          1
+        ],
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "leaves": 4,
+      "name": "AND_OR_OR4"
+    },
+    {
+      "expression": [
+        "OR",
+        [
+          "AND",
+          0,
+          1
+        ],
+        [
+          "AND",
+          2,
+          3
+        ]
+      ],
+      "leaves": 4,
+      "name": "OR_AND_AND4"
+    },
+    {
+      "expression": [
+        "AND",
+        0,
+        [
+          "OR",
+          1,
+          [
+            "AND",
+            2,
+            3
+          ]
+        ]
+      ],
+      "leaves": 4,
+      "name": "NESTED_AND4"
+    },
+    {
+      "expression": [
+        "OR",
+        0,
+        [
+          "AND",
+          1,
+          [
+            "OR",
+            2,
+            3
+          ]
+        ]
+      ],
+      "leaves": 4,
+      "name": "NESTED_OR4"
+    }
+  ],
+  "frozen_at_utc": "2026-10-24T03:30:03.675992+00:00",
+  "kind": "synthetic_development_pilot_not_external_preregistration",
+  "leaf_domain": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    null,
+    "ERROR"
+  ],
+  "primary_checks": [
+    "strict_vs_independent_completion_oracle",
+    "known_value_cross_system_nonnegative_gap"
+  ],
+  "random_generator": "Python random.Random; ordered pairs sampled with replacement",
+  "reporting": "Counts and rates conditional on constructed task distribution; no p values, real-world prevalence or clinical/human claims.",
+  "scope": "Independent series candidate 3. Not Stage 1/Stage 2 production, calibration, certification, or DI estimation.",
+  "seed": 20261024,
+  "single_system_design": "Exhaustive on all 12 formula families and 7-state leaf assignments.",
+  "study_id": "FAB-LOGIC-PILOT-20261024",
+  "thresholds": [
+    1,
+    2,
+    3,
+    4
+  ]
+}

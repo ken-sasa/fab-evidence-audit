@@ -1,0 +1,633 @@
+{
+  "audit_code_sha256": "36154df60dcc33c82af92e75d6ca58738ec18da03ebfdc3fcef0ba2b8a6862bc",
+  "audit_completed_at_utc": "2026-10-24T03:33:05.439894+00:00",
+  "audit_kind": "post_run_read_only_count_and_integrity_audit",
+  "audited_at_utc": "2026-10-24T03:33:03.625215+00:00",
+  "checks": [
+    {
+      "actual": "c7a89c32e9a3fe6798be6e66bce96e08b16efda9ce2d01e0c0b039afad34fea9",
+      "expected": "c7a89c32e9a3fe6798be6e66bce96e08b16efda9ce2d01e0c0b039afad34fea9",
+      "name": "protocol_hash_matches_summary",
+      "passed": true
+    },
+    {
+      "actual": [
+        "engine.py",
+        "oracle.py",
+        "run_pilot.py"
+      ],
+      "expected": [
+        "engine.py",
+        "oracle.py",
+        "run_pilot.py"
+      ],
+      "name": "original_frozen_source_set",
+      "passed": true
+    },
+    {
+      "actual": "94f82b142f7c9f754123b0f828152f4ec5e1301ea155dd6aa87b5f5b275253c2",
+      "expected": "94f82b142f7c9f754123b0f828152f4ec5e1301ea155dd6aa87b5f5b275253c2",
+      "name": "frozen_source_hash:engine.py",
+      "passed": true
+    },
+    {
+      "actual": "1067bd514b5f8e44d79f68a2ef7fec45e517d46565113df3df3a8b3cb9e63af7",
+      "expected": "1067bd514b5f8e44d79f68a2ef7fec45e517d46565113df3df3a8b3cb9e63af7",
+      "name": "frozen_source_hash:oracle.py",
+      "passed": true
+    },
+    {
+      "actual": "080625d487cdca87748cbf08dddcc9ae7e41df4fa36715746fe5496c49115ed8",
+      "expected": "080625d487cdca87748cbf08dddcc9ae7e41df4fa36715746fe5496c49115ed8",
+      "name": "frozen_source_hash:run_pilot.py",
+      "passed": true
+    },
+    {
+      "actual": 63504,
+      "expected": 63504,
+      "name": "single_rows_expected",
+      "passed": true
+    },
+    {
+      "actual": 63504,
+      "expected": 63504,
+      "name": "single_rows_match_summary",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "single_metrics:strict_four_state",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "single_metrics:zero_imputation",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "single_metrics:mean_aggregation",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "single_metrics:short_circuit",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "strict_mismatches",
+      "passed": true
+    },
+    {
+      "actual": 4174,
+      "expected": 4174,
+      "name": "known_mean_mismatches",
+      "passed": true
+    },
+    {
+      "actual": 17200,
+      "expected": 17200,
+      "name": "known_mean_denominator",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "confusion_table_matches_raw_rows",
+      "passed": true
+    },
+    {
+      "actual": 303000,
+      "expected": 303000,
+      "name": "cross_rows_expected",
+      "passed": true
+    },
+    {
+      "actual": 303000,
+      "expected": 303000,
+      "name": "cross_rows_match_summary",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_metrics_match_summary",
+      "passed": true
+    },
+    {
+      "actual": 16870,
+      "expected": 16870,
+      "name": "cross_false_pass",
+      "passed": true
+    },
+    {
+      "actual": 107558,
+      "expected": 107558,
+      "name": "cross_gold_fail_denominator",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "cross_false_fail",
+      "passed": true
+    },
+    {
+      "actual": 255000,
+      "expected": 255000,
+      "name": "exhaustive_threshold_cases",
+      "passed": true
+    },
+    {
+      "actual": 48000,
+      "expected": 48000,
+      "name": "sampled_threshold_cases",
+      "passed": true
+    },
+    {
+      "actual": 303000,
+      "expected": 303000,
+      "name": "sampling_counts_sum",
+      "passed": true
+    },
+    {
+      "actual": 255000,
+      "expected": 255000,
+      "name": "exhaustive_count_matches_summary",
+      "passed": true
+    },
+    {
+      "actual": 48000,
+      "expected": 48000,
+      "name": "sampled_count_matches_summary",
+      "passed": true
+    },
+    {
+      "actual": [
+        [
+          "AND2",
+          "exhaustive"
+        ],
+        [
+          "AND3",
+          "exhaustive"
+        ],
+        [
+          "AND4",
+          "random_with_replacement"
+        ],
+        [
+          "AND_OR3",
+          "exhaustive"
+        ],
+        [
+          "AND_OR_OR4",
+          "random_with_replacement"
+        ],
+        [
+          "NESTED_AND4",
+          "random_with_replacement"
+        ],
+        [
+          "NESTED_OR4",
+          "random_with_replacement"
+        ],
+        [
+          "OR2",
+          "exhaustive"
+        ],
+        [
+          "OR3",
+          "exhaustive"
+        ],
+        [
+          "OR4",
+          "random_with_replacement"
+        ],
+        [
+          "OR_AND3",
+          "exhaustive"
+        ],
+        [
+          "OR_AND_AND4",
+          "random_with_replacement"
+        ]
+      ],
+      "expected": [
+        [
+          "AND2",
+          "exhaustive"
+        ],
+        [
+          "AND3",
+          "exhaustive"
+        ],
+        [
+          "AND4",
+          "random_with_replacement"
+        ],
+        [
+          "AND_OR3",
+          "exhaustive"
+        ],
+        [
+          "AND_OR_OR4",
+          "random_with_replacement"
+        ],
+        [
+          "NESTED_AND4",
+          "random_with_replacement"
+        ],
+        [
+          "NESTED_OR4",
+          "random_with_replacement"
+        ],
+        [
+          "OR2",
+          "exhaustive"
+        ],
+        [
+          "OR3",
+          "exhaustive"
+        ],
+        [
+          "OR4",
+          "random_with_replacement"
+        ],
+        [
+          "OR_AND3",
+          "exhaustive"
+        ],
+        [
+          "OR_AND_AND4",
+          "random_with_replacement"
+        ]
+      ],
+      "name": "cross_formula_keys_match_summary",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:AND2/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:OR2/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:AND3/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:OR3/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:AND_OR3/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:OR_AND3/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:AND4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:OR4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:AND_OR_OR4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:OR_AND_AND4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:NESTED_AND4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_formula:NESTED_OR4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": [
+        [
+          "AND2",
+          "exhaustive"
+        ],
+        [
+          "AND3",
+          "exhaustive"
+        ],
+        [
+          "AND4",
+          "random_with_replacement"
+        ],
+        [
+          "AND_OR3",
+          "exhaustive"
+        ],
+        [
+          "AND_OR_OR4",
+          "random_with_replacement"
+        ],
+        [
+          "NESTED_AND4",
+          "random_with_replacement"
+        ],
+        [
+          "NESTED_OR4",
+          "random_with_replacement"
+        ],
+        [
+          "OR2",
+          "exhaustive"
+        ],
+        [
+          "OR3",
+          "exhaustive"
+        ],
+        [
+          "OR4",
+          "random_with_replacement"
+        ],
+        [
+          "OR_AND3",
+          "exhaustive"
+        ],
+        [
+          "OR_AND_AND4",
+          "random_with_replacement"
+        ]
+      ],
+      "expected": [
+        [
+          "AND2",
+          "exhaustive"
+        ],
+        [
+          "AND3",
+          "exhaustive"
+        ],
+        [
+          "AND4",
+          "random_with_replacement"
+        ],
+        [
+          "AND_OR3",
+          "exhaustive"
+        ],
+        [
+          "AND_OR_OR4",
+          "random_with_replacement"
+        ],
+        [
+          "NESTED_AND4",
+          "random_with_replacement"
+        ],
+        [
+          "NESTED_OR4",
+          "random_with_replacement"
+        ],
+        [
+          "OR2",
+          "exhaustive"
+        ],
+        [
+          "OR3",
+          "exhaustive"
+        ],
+        [
+          "OR4",
+          "random_with_replacement"
+        ],
+        [
+          "OR_AND3",
+          "exhaustive"
+        ],
+        [
+          "OR_AND_AND4",
+          "random_with_replacement"
+        ]
+      ],
+      "name": "cross_summary_csv_keys",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:AND2/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:OR2/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:AND3/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:OR3/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:AND_OR3/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:OR_AND3/exhaustive",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:AND4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:OR4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:AND_OR_OR4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:OR_AND_AND4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:NESTED_AND4/random_with_replacement",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "cross_summary_csv:NESTED_OR4/random_with_replacement",
+      "passed": true
+    }
+  ],
+  "denominators": {
+    "cross_false_pass_incidence_denominator": 303000,
+    "cross_false_positive_rate_denominator": 107558,
+    "cross_system_threshold_cases": 303000,
+    "interpretation": "Pairs can repeat under sampling with replacement; formula families have unequal weights in the pooled case distribution.",
+    "known_mean_mismatch_denominator": 17200,
+    "known_mean_mismatch_numerator": 4174,
+    "pair_draws_by_sampling": {
+      "exhaustive": 63750,
+      "random_with_replacement": 12000
+    },
+    "pair_draws_with_all_four_thresholds": 75750,
+    "single_system_threshold_cases": 63504,
+    "unique_formula_labelled_ordered_pairs_by_sampling": {
+      "exhaustive": 63750,
+      "random_with_replacement": 11967
+    }
+  },
+  "limitations": [
+    "Recorded gold labels are inputs; their semantics are not independently recomputed here.",
+    "Threshold cases share configuration pairs and are not independent observations.",
+    "This audit is not a new experiment or registered FAB production certification."
+  ],
+  "recounted_cross_system_metrics": {
+    "false_fail": 0,
+    "false_pass": 16870,
+    "oracle_fail": 107558,
+    "score_inflated": 48248,
+    "total": 303000,
+    "total_score_gap": 67480
+  },
+  "recounted_single_system_metrics": {
+    "mean_aggregation": {
+      "correct": 21256,
+      "false_fail": 5927,
+      "false_pass": 1617,
+      "fully_known_mismatches": 4174,
+      "fully_known_total": 17200,
+      "gold_ERROR": 28656,
+      "gold_FAIL": 14400,
+      "gold_PASS": 14400,
+      "gold_UNKNOWN": 6048,
+      "masked_error": 28656,
+      "total": 63504,
+      "unknown_forced_decision": 6048,
+      "unsupported_pass": 1250
+    },
+    "short_circuit": {
+      "correct": 46904,
+      "false_fail": 0,
+      "false_pass": 0,
+      "fully_known_mismatches": 0,
+      "fully_known_total": 17200,
+      "gold_ERROR": 28656,
+      "gold_FAIL": 14400,
+      "gold_PASS": 14400,
+      "gold_UNKNOWN": 6048,
+      "masked_error": 16600,
+      "total": 63504,
+      "unknown_forced_decision": 0,
+      "unsupported_pass": 0
+    },
+    "strict_four_state": {
+      "correct": 63504,
+      "false_fail": 0,
+      "false_pass": 0,
+      "fully_known_mismatches": 0,
+      "fully_known_total": 17200,
+      "gold_ERROR": 28656,
+      "gold_FAIL": 14400,
+      "gold_PASS": 14400,
+      "gold_UNKNOWN": 6048,
+      "masked_error": 0,
+      "total": 63504,
+      "unknown_forced_decision": 0,
+      "unsupported_pass": 0
+    },
+    "zero_imputation": {
+      "correct": 28800,
+      "false_fail": 0,
+      "false_pass": 0,
+      "fully_known_mismatches": 0,
+      "fully_known_total": 17200,
+      "gold_ERROR": 28656,
+      "gold_FAIL": 14400,
+      "gold_PASS": 14400,
+      "gold_UNKNOWN": 6048,
+      "masked_error": 28656,
+      "total": 63504,
+      "unknown_forced_decision": 6048,
+      "unsupported_pass": 0
+    }
+  },
+  "scope": [
+    "Recount recorded CSV columns independently of engine and oracle imports.",
+    "Check confusion/summary counts, sampling denominators and score-column invariants.",
+    "Verify frozen-protocol hash and its three recorded source-code hashes.",
+    "Original protocol, code, raw data and summary are not modified."
+  ],
+  "source_sha256": {
+    "confusion.csv": "373fb8bb521af48f25c6e5af5af827bdbfce544bdb39bbcfd58cbd693c141480",
+    "cross_system_cases.csv.gz": "a8d0b1f4c7f5abbc24fde7e2497e32dfb044d346901a3899ec9b2e07719956c6",
+    "cross_system_summary.csv": "5a2f1cf2ce5047679be6235b1c8b87346238db019a2d750737d064ddcf37b22b",
+    "protocol_frozen.json": "c7a89c32e9a3fe6798be6e66bce96e08b16efda9ce2d01e0c0b039afad34fea9",
+    "single_system_cases.csv.gz": "e59fe450c51cfcdd80b15c6d3f8a90798ecf8bac04c9fc8da79eb92258e512e3",
+    "summary.json": "9a4b557407c17ff6dd6e03d554c3c5b8381dec3a6c266422f7070a443db36025"
+  },
+  "status": "PASS",
+  "study_id": "FAB-LOGIC-PILOT-20261024"
+}

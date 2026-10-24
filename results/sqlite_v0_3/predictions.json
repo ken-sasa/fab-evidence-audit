@@ -1,0 +1,2406 @@
+[
+  {
+    "task_id": "complete-before_begin-strict-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-both_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "fk_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-fk_only-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "fk_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-fk_only-r0",
+        "sql-before_begin-fk_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-check_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-check_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-check_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-check_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1",
+        "sql-before_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-open-either",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-open-either_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "fk_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-fk_only-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-both_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "fk_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-fk_only-r0",
+        "sql-before_begin-fk_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-check_only-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-check_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-check_only-both_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-check_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1",
+        "sql-before_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-open-both_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-check_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-check_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-check_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-check_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1",
+        "sql-before_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "fk_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-fk_only-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "fk_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-fk_only-r0",
+        "sql-before_begin-fk_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-check_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-check_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-check_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-check_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1",
+        "sql-before_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-check_only-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-check_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-check_only-both_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-check_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1",
+        "sql-before_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "fk_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-fk_only-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "fk_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-fk_only-r0",
+        "sql-before_begin-fk_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-check_only-open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-check_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-check_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-check_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1",
+        "sql-before_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-check_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-check_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-check_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-before_begin-fk_only-check_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1",
+        "sql-before_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-check_only-open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-check_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-check_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r0",
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-before_begin-strict-fk_only-check_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-check_only-r1",
+        "sql-before_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "withheld-before_begin-both",
+    "family": "withheld",
+    "gold": "UNKNOWN",
+    "methods": {
+      "witness_evaluator": "UNKNOWN",
+      "relational_reference": "UNKNOWN",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "UNKNOWN",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "UNKNOWN"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-before_begin-either",
+    "family": "withheld",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "withheld-before_begin-both_with_unique",
+    "family": "withheld",
+    "gold": "UNKNOWN",
+    "methods": {
+      "witness_evaluator": "UNKNOWN",
+      "relational_reference": "UNKNOWN",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "UNKNOWN",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "UNKNOWN"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-before_begin-either_with_unique",
+    "family": "withheld",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "before_begin",
+      "record_ids": [
+        "sql-before_begin-strict-r1",
+        "sql-before_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1",
+        "sql-after_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-either",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-either_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-check_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-check_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-check_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-check_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1",
+        "sql-after_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-open-either",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-open-either_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1",
+        "sql-after_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-check_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-check_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-check_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-check_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1",
+        "sql-after_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1",
+        "sql-after_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-check_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-check_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-check_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-check_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1",
+        "sql-after_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-open-either",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-check_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-check_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-check_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-check_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1",
+        "sql-after_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-check_only-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-check_only-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-check_only-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-check_only-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1",
+        "sql-after_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1",
+        "sql-after_begin-strict-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-check_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-check_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-check_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-check_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1",
+        "sql-after_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-check_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-check_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-check_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-fk_only-check_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1",
+        "sql-after_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-check_only-open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-check_only-open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-check_only-open-both_with_unique",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-after_begin-strict-fk_only-check_only-open-either_with_unique",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "check_only",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-check_only-r1",
+        "sql-after_begin-check_only-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "withheld-after_begin-both",
+    "family": "withheld",
+    "gold": "UNKNOWN",
+    "methods": {
+      "witness_evaluator": "UNKNOWN",
+      "relational_reference": "UNKNOWN",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "UNKNOWN",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "UNKNOWN"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-after_begin-either",
+    "family": "withheld",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "withheld-after_begin-both_with_unique",
+    "family": "withheld",
+    "gold": "UNKNOWN",
+    "methods": {
+      "witness_evaluator": "UNKNOWN",
+      "relational_reference": "UNKNOWN",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "UNKNOWN",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "UNKNOWN"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-after_begin-either_with_unique",
+    "family": "withheld",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "strict",
+      "context": "after_begin",
+      "record_ids": [
+        "sql-after_begin-strict-r1",
+        "sql-after_begin-strict-r2"
+      ]
+    }
+  }
+]

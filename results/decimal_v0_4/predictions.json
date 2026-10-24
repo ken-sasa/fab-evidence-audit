@@ -1,0 +1,2383 @@
+[
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0",
+        "decimal-ROUND_HALF_EVEN-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_trap-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "low_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-low_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_trap-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_trap-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_open-either",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0",
+        "decimal-ROUND_HALF_EVEN-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_trap-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0",
+        "decimal-ROUND_HALF_EVEN-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_trap-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_trap-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0",
+        "decimal-ROUND_HALF_EVEN-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_trap-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_trap-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_trap-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_trap-low_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "low_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-low_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-low_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_trap-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0",
+        "decimal-ROUND_HALF_EVEN-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_trap-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_trap-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0",
+        "decimal-ROUND_HALF_EVEN-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_trap-low_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0",
+        "decimal-ROUND_HALF_EVEN-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-low_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_trap-low_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_open-low_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_trap-low_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0",
+        "decimal-ROUND_HALF_EVEN-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_EVEN-high_trap-high_open-low_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-ROUND_HALF_EVEN-both",
+    "family": "withheld",
+    "gold": "UNKNOWN",
+    "methods": {
+      "witness_evaluator": "UNKNOWN",
+      "relational_reference": "UNKNOWN",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "UNKNOWN",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "UNKNOWN"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-ROUND_HALF_EVEN-either",
+    "family": "withheld",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_EVEN",
+      "record_ids": [
+        "decimal-ROUND_HALF_EVEN-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "withheld-ROUND_HALF_EVEN-both_with_round",
+    "family": "withheld",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-ROUND_HALF_EVEN-either_with_round",
+    "family": "withheld",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-both_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0",
+        "decimal-ROUND_HALF_UP-high_open-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_trap-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "low_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-low_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_trap-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_trap-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "low_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-low_trap-r1",
+        "decimal-ROUND_HALF_UP-low_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_open-either",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_open-either_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-both_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0",
+        "decimal-ROUND_HALF_UP-high_open-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_trap-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_trap-both_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_trap-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_trap-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_trap-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_trap-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0",
+        "decimal-ROUND_HALF_UP-high_open-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0",
+        "decimal-ROUND_HALF_UP-high_open-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_trap-low_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "low_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-low_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "FAIL",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-low_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "low_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-low_trap-r1",
+        "decimal-ROUND_HALF_UP-low_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_trap-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_trap-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_trap-both_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_trap-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0",
+        "decimal-ROUND_HALF_UP-high_open-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_open-both_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0",
+        "decimal-ROUND_HALF_UP-high_open-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_trap-low_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-low_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_trap-low_open-both",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "FAIL",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "FAIL",
+    "methods": {
+      "witness_evaluator": "FAIL",
+      "relational_reference": "FAIL",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "FAIL"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_open-low_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0",
+        "decimal-ROUND_HALF_UP-high_open-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_trap-low_open-both",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_trap-low_open-either",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_trap-low_open-both_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1",
+        "decimal-ROUND_HALF_UP-high_trap-r2"
+      ]
+    }
+  },
+  {
+    "task_id": "complete-ROUND_HALF_UP-high_trap-high_open-low_trap-low_open-either_with_round",
+    "family": "complete",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_open",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_open-r0",
+        "decimal-ROUND_HALF_UP-high_open-r1"
+      ]
+    }
+  },
+  {
+    "task_id": "withheld-ROUND_HALF_UP-both",
+    "family": "withheld",
+    "gold": "UNKNOWN",
+    "methods": {
+      "witness_evaluator": "UNKNOWN",
+      "relational_reference": "UNKNOWN",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "UNKNOWN",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "UNKNOWN"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-ROUND_HALF_UP-either",
+    "family": "withheld",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "PASS",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0"
+      ]
+    }
+  },
+  {
+    "task_id": "withheld-ROUND_HALF_UP-both_with_round",
+    "family": "withheld",
+    "gold": "UNKNOWN",
+    "methods": {
+      "witness_evaluator": "UNKNOWN",
+      "relational_reference": "UNKNOWN",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "UNKNOWN",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "FAIL",
+      "sql_relational": "UNKNOWN"
+    },
+    "witness": null
+  },
+  {
+    "task_id": "withheld-ROUND_HALF_UP-either_with_round",
+    "family": "withheld",
+    "gold": "PASS",
+    "methods": {
+      "witness_evaluator": "PASS",
+      "relational_reference": "PASS",
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "PASS",
+      "optimistic_pool": "PASS",
+      "missing_as_fail": "PASS",
+      "sql_relational": "PASS"
+    },
+    "witness": {
+      "config_id": "high_trap",
+      "context": "ROUND_HALF_UP",
+      "record_ids": [
+        "decimal-ROUND_HALF_UP-high_trap-r0",
+        "decimal-ROUND_HALF_UP-high_trap-r1"
+      ]
+    }
+  }
+]

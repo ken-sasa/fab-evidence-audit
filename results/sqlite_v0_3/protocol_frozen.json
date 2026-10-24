@@ -1,0 +1,174 @@
+{
+  "version": "v0.3 SQLite executable case study",
+  "frozen_at_utc": "2026-10-24T04:22:34.860919+00:00",
+  "status": "Exploratory purposive case study; source selection informed by documentation, not a blinded holdout",
+  "local_commitment_only": true,
+  "source_outcomes_accessed_before_freeze": false,
+  "known_contracts": "Expected documented effects were known before execution; this is not outcome blindness.",
+  "selection": {
+    "domain": "Official SQLite documentation and local SQLite runtime only; outside main FAB corpus",
+    "inclusion": [
+      "public official behavioral contract",
+      "deterministic local in-memory execution",
+      "no human or personal data",
+      "configuration or setting-application-phase distinction"
+    ],
+    "sampling": "Purposive: foreign_keys and ignore_check_constraints; UNIQUE is a constant positive control",
+    "exclusions": [
+      "performance",
+      "concurrency",
+      "disk persistence",
+      "network",
+      "recursive triggers",
+      "other engines or versions"
+    ],
+    "no_outcome_based_exclusion": true
+  },
+  "profiles": {
+    "strict": [
+      1,
+      0
+    ],
+    "fk_only": [
+      1,
+      1
+    ],
+    "check_only": [
+      0,
+      0
+    ],
+    "open": [
+      0,
+      1
+    ]
+  },
+  "phases": [
+    "before_begin",
+    "after_begin"
+  ],
+  "phase_definition": "Explicit baseline FK=OFF and ignore_check=OFF; create schema; apply requested settings either before or after BEGIN. All probes then execute inside that transaction.",
+  "configuration_identity": "Requested recipe plus recorded runtime/build/schema. Phase is a context; effective settings and in-transaction state are recorded for every probe. Names are not statements that requested settings took effect.",
+  "requirements": {
+    "0": "reject orphan foreign key insertion",
+    "1": "reject CHECK(value>0) violation",
+    "2": "reject duplicate non-null UNIQUE token"
+  },
+  "measurement": "Each of eight connection conditions has three savepoint-isolated probes on one schema/connection: a valid control, one isolated violating insert, a row-count check, and cleanup. Expected constraint-specific IntegrityError means PASS; accepted violating write means FAIL; unexpected exception/control/count/readback failure means ERROR, never auto-PASS.",
+  "formulas": {
+    "both": [
+      "AND",
+      0,
+      1
+    ],
+    "either": [
+      "OR",
+      0,
+      1
+    ],
+    "both_with_unique": [
+      "AND",
+      0,
+      1,
+      2
+    ],
+    "either_with_unique": [
+      "AND",
+      [
+        "OR",
+        0,
+        1
+      ],
+      2
+    ]
+  },
+  "query_design": {
+    "complete": "all 15 nonempty subsets of 4 profiles x 2 phases x 4 formulas =120",
+    "withheld": "strict-only x 2 phases x 4 formulas, remove FK observation in target phase =8",
+    "record_pool": "both phases for included profiles, enabling context-loss contrasts",
+    "unit": "24 measured probe cells from 8 connection conditions; 128 dependent constructed queries, not independent technology samples"
+  },
+  "methods": [
+    "witness_evaluator",
+    "relational_reference",
+    "sql_relational",
+    "config_only_conservative",
+    "context_only_conservative",
+    "optimistic_pool",
+    "missing_as_fail"
+  ],
+  "metrics": [
+    "oracle agreement",
+    "known FAIL to PASS",
+    "UNKNOWN to PASS or FAIL",
+    "excess ERROR",
+    "hidden ERROR",
+    "valid witnesses",
+    "primary vs independent runtime reference on all 24 cells"
+  ],
+  "integrity_policy": "Unchanged v0.2 task-wide referenced target-cell ERROR priority; legitimate constraint rejection is a requirement PASS, not an input ERROR.",
+  "replication": "Separate reference module independently authored in the same agent workflow; not independent human/group reproduction or a second SQLite implementation.",
+  "inference": "Descriptive counts only; no confidence interval, population prevalence or statistical superiority claim",
+  "changes": "No planned outcome-based changes; failures retained. Any correction requires a separately named amended run and explicit disclosure.",
+  "ethics_scope": "Only artificial SQL values, public technical documents and local software outputs; no human participants, personal data or main-study evidence ratings",
+  "sources": [
+    {
+      "author": "SQLite Project",
+      "title": "PRAGMA Statements",
+      "url": "https://www.sqlite.org/pragma.html#pragma_foreign_keys",
+      "sections": [
+        "foreign_keys",
+        "ignore_check_constraints",
+        "general PRAGMA behavior"
+      ],
+      "accessed_jst": "2026-10-24",
+      "page_updated_utc": "2026-10-04 10:38:19",
+      "used_contract": "Foreign-key setting changes during a pending transaction have no effect; CHECK enforcement can be disabled independently. Unknown PRAGMA names can be silently ignored, so readbacks and behavioral probes are required.",
+      "access_route": "Official web text, no byte-identical snapshot archived"
+    },
+    {
+      "author": "SQLite Project",
+      "title": "SQLite Foreign Key Support",
+      "url": "https://www.sqlite.org/foreignkeys.html#fk_enable",
+      "sections": [
+        "2 Enabling Foreign Key Support"
+      ],
+      "accessed_jst": "2026-10-24",
+      "used_contract": "Foreign-key enforcement depends on build support and connection settings; explicit settings and readbacks avoid dependence on defaults.",
+      "access_route": "Official web text"
+    },
+    {
+      "author": "SQLite Project",
+      "title": "CREATE TABLE",
+      "url": "https://www.sqlite.org/lang_createtable.html",
+      "sections": [
+        "3.6 UNIQUE constraints",
+        "3.7 CHECK constraints",
+        "4 Constraint enforcement"
+      ],
+      "accessed_jst": "2026-10-24",
+      "used_contract": "Non-null duplicate UNIQUE values and zero-valued CHECK expressions violate constraints when enforcement applies. Each probe changes only the field relevant to one constraint.",
+      "access_route": "Official web text"
+    },
+    {
+      "author": "SQLite Project",
+      "title": "Result and Error Codes",
+      "url": "https://www.sqlite.org/rescode.html",
+      "sections": [
+        "SQLITE_CONSTRAINT_CHECK",
+        "SQLITE_CONSTRAINT_FOREIGNKEY",
+        "SQLITE_CONSTRAINT_UNIQUE"
+      ],
+      "accessed_jst": "2026-10-24",
+      "used_contract": "Extended constraint codes distinguish the expected rejection from an unrelated error.",
+      "access_route": "Official web text"
+    }
+  ],
+  "source_hashes": {
+    "v03_sqlite/run_sqlite_case.py": "93af411b8d034f6db67eccaf78233b1be51370a01b4e305db716dd013c152d0a",
+    "v03_sqlite/sqlite_reference.py": "cdb7dd484cc421f535f5764d9466817acfdcdbb5fb5660c68fb832f166d29f26",
+    "v03_sqlite/audit_sqlite.py": "cfdee9a331ff05227fe7c060f92b7256dc8337f28d2a8c22de6244a27f0aae26",
+    "v03_sqlite/sources.json": "ffc59ed986874b9990c04fb21e574c531900ddb139813488b929f0c757a479ed",
+    "v02_refined/engine_context.py": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8",
+    "v02_refined/oracle_context.py": "d6980580e2440b9ff41eb3200e40427ee59daea22496259b0d6fc3d9795c0456"
+  }
+}

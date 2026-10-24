@@ -1,0 +1,144 @@
+{
+  "protocol_sha256": "16909a3d2e6a6ba0a0bc59cc2ceb67d0662a8eaeebb83981ff419108ab1e7498",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "sqlite_version": "3.53.1",
+    "sqlite_source_id": "2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4de77658ce58143a1af0e3785e4e6475127e9",
+    "compile_options": [
+      "ATOMIC_INTRINSICS=1",
+      "COMPILER=clang-22.1.3",
+      "DEFAULT_AUTOVACUUM",
+      "DEFAULT_CACHE_SIZE=-2000",
+      "DEFAULT_FILE_FORMAT=4",
+      "DEFAULT_JOURNAL_SIZE_LIMIT=-1",
+      "DEFAULT_MMAP_SIZE=0",
+      "DEFAULT_PAGE_SIZE=4096",
+      "DEFAULT_PCACHE_INITSZ=20",
+      "DEFAULT_RECURSIVE_TRIGGERS",
+      "DEFAULT_SECTOR_SIZE=4096",
+      "DEFAULT_SYNCHRONOUS=2",
+      "DEFAULT_WAL_AUTOCHECKPOINT=1000",
+      "DEFAULT_WAL_SYNCHRONOUS=2",
+      "DEFAULT_WORKER_THREADS=0",
+      "DIRECT_OVERFLOW_READ",
+      "ENABLE_DBSTAT_VTAB",
+      "ENABLE_FTS3",
+      "ENABLE_FTS3_PARENTHESIS",
+      "ENABLE_FTS4",
+      "ENABLE_FTS5",
+      "ENABLE_GEOPOLY",
+      "ENABLE_MATH_FUNCTIONS",
+      "ENABLE_PERCENTILE",
+      "ENABLE_RTREE",
+      "MALLOC_SOFT_LIMIT=1024",
+      "MAX_ATTACHED=10",
+      "MAX_COLUMN=2000",
+      "MAX_COMPOUND_SELECT=500",
+      "MAX_DEFAULT_PAGE_SIZE=8192",
+      "MAX_EXPR_DEPTH=1000",
+      "MAX_FUNCTION_ARG=1000",
+      "MAX_LENGTH=1000000000",
+      "MAX_LIKE_PATTERN_LENGTH=50000",
+      "MAX_MMAP_SIZE=0x7fff0000",
+      "MAX_PAGE_COUNT=0xfffffffe",
+      "MAX_PAGE_SIZE=65536",
+      "MAX_SQL_LENGTH=1000000000",
+      "MAX_TRIGGER_DEPTH=1000",
+      "MAX_VARIABLE_NUMBER=32766",
+      "MAX_VDBE_OP=250000000",
+      "MAX_WORKER_THREADS=8",
+      "MUTEX_PTHREADS",
+      "SYSTEM_MALLOC",
+      "TEMP_STORE=1",
+      "THREADSAFE=1"
+    ],
+    "started_at_utc": "2026-10-24T04:22:38.849612+00:00"
+  },
+  "measured_probe_cells": 24,
+  "connection_conditions": 8,
+  "observed_states": {
+    "PASS": 14,
+    "FAIL": 10
+  },
+  "queries": 128,
+  "query_families": {
+    "complete": 120,
+    "withheld": 8
+  },
+  "gold_counts": {
+    "PASS": 72,
+    "FAIL": 52,
+    "UNKNOWN": 4
+  },
+  "metrics": {
+    "witness_evaluator": {
+      "correct": 128,
+      "false_pass": 0,
+      "excess_error": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 0,
+      "hidden_error": 0
+    },
+    "relational_reference": {
+      "correct": 128,
+      "false_pass": 0,
+      "excess_error": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 0,
+      "hidden_error": 0
+    },
+    "config_only_conservative": {
+      "correct": 28,
+      "false_pass": 0,
+      "excess_error": 96,
+      "unknown_to_pass": 2,
+      "unknown_to_fail": 2,
+      "hidden_error": 0
+    },
+    "context_only_conservative": {
+      "correct": 48,
+      "false_pass": 0,
+      "excess_error": 80,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 0,
+      "hidden_error": 0
+    },
+    "optimistic_pool": {
+      "correct": 96,
+      "false_pass": 28,
+      "excess_error": 0,
+      "unknown_to_pass": 2,
+      "unknown_to_fail": 2,
+      "hidden_error": 0
+    },
+    "missing_as_fail": {
+      "correct": 124,
+      "false_pass": 0,
+      "excess_error": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 4,
+      "hidden_error": 0
+    },
+    "sql_relational": {
+      "correct": 128,
+      "false_pass": 0,
+      "excess_error": 0,
+      "unknown_to_pass": 0,
+      "unknown_to_fail": 0,
+      "hidden_error": 0
+    }
+  },
+  "no_natural_unknown_or_conflicting_records": true,
+  "withholding_is_derived_control": true,
+  "files_sha256": {
+    "conditions.json": "51a6bf8d43034ddf07176bd38aea165ca89366912854bc36224d462a72b4e2c9",
+    "observations.json": "c5fb88b7541b4b81a83c065d25993dee00b1a9b528717b08edf3b52e912b037f",
+    "predictions.json": "c3962c7ca8dc77d8c135d14501b08c7e312edcc7a241ee8268c4e49b1fa61491",
+    "protocol_frozen.json": "16909a3d2e6a6ba0a0bc59cc2ceb67d0662a8eaeebb83981ff419108ab1e7498",
+    "runtime.json": "8b35cc1a2257ba57dd3c3fa90f9861ecf630aba88eb41ee91d87898f127353e7",
+    "sql_templates.json": "ba011d50568c08f4211d5257674d612a6718d9b7a13888faa1ef9dc726148a76",
+    "sqlite_reference.json": "0d5c450187a7cc27812dc2258c975919e9424ad51ff23e3d6c5beabb45cc2e1f",
+    "tasks.jsonl": "4741608969132c54364ad23af1bdc6deb65570cd78319229c0d66c8b120e276d"
+  }
+}

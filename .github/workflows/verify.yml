@@ -1,0 +1,23 @@
+name: Verify installed release
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install prepared wheel without source or network dependencies
+        run: python -m pip install --no-index --no-deps --target "$RUNNER_TEMP/fab-installed" release/dist/fab_evidence_audit-0.1.1-py3-none-any.whl
+      - name: Run installed tests and archived-query replay
+        run: python release/verify_distribution.py --installed-root "$RUNNER_TEMP/fab-installed" --output "$RUNNER_TEMP/fab-verification.json"
+      - name: Reconstruct evidence and audit the installed CLI witness
+        run: python release/run_sqlite_walkthrough.py --installed-root "$RUNNER_TEMP/fab-installed" --output "$RUNNER_TEMP/fab-walkthrough"

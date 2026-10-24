@@ -1,0 +1,2105 @@
+{
+  "CLEAN_FAIL": {
+    "gold": "FAIL",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "FAIL",
+      "optimistic_pool": "PASS",
+      "relational_reference": "FAIL",
+      "witness_evaluator": "FAIL"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "CLEAN_FAIL",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=Q",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "FAIL"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=C;temperature=cold;resource=Q",
+      "task_id": "NEW4_AND:CLEAN_FAIL:000"
+    },
+    "witness": null
+  },
+  "CLEAN_PASS": {
+    "gold": "PASS",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "PASS",
+      "optimistic_pool": "PASS",
+      "relational_reference": "PASS",
+      "witness_evaluator": "PASS"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "CLEAN_PASS",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=B;temperature=room;resource=Q",
+      "task_id": "NEW4_AND:CLEAN_PASS:000"
+    },
+    "witness": {
+      "config_id": "S0_0",
+      "context": "mode=B;temperature=room;resource=Q",
+      "record_ids": [
+        "R0000",
+        "R0001",
+        "R0002"
+      ]
+    }
+  },
+  "CONTEXT_FALSE": {
+    "gold": "FAIL",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "FAIL",
+      "missing_as_fail": "FAIL",
+      "optimistic_pool": "PASS",
+      "relational_reference": "FAIL",
+      "witness_evaluator": "FAIL"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "CONTEXT_FALSE",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=C;temperature=room;resource=P",
+      "task_id": "NEW4_AND:CONTEXT_FALSE:000"
+    },
+    "witness": null
+  },
+  "CROSS_CONFIG": {
+    "gold": "FAIL",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "FAIL",
+      "optimistic_pool": "PASS",
+      "relational_reference": "FAIL",
+      "witness_evaluator": "FAIL"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "CROSS_CONFIG",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=room;resource=P",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "PASS"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=A;temperature=room;resource=P",
+      "task_id": "NEW4_AND:CROSS_CONFIG:000"
+    },
+    "witness": null
+  },
+  "DUPLICATE_SUPPORT": {
+    "gold": "PASS",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "PASS",
+      "optimistic_pool": "PASS",
+      "relational_reference": "PASS",
+      "witness_evaluator": "PASS"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "DUPLICATE_SUPPORT",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0027",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0026",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0024",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0025",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=B;temperature=room;resource=Q",
+      "task_id": "NEW4_AND:DUPLICATE_SUPPORT:000"
+    },
+    "witness": {
+      "config_id": "S0_0",
+      "context": "mode=B;temperature=room;resource=Q",
+      "record_ids": [
+        "R0000",
+        "R0001",
+        "R0002"
+      ]
+    }
+  },
+  "OFFCONTEXT_ERROR": {
+    "gold": "PASS",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "PASS",
+      "optimistic_pool": "PASS",
+      "relational_reference": "PASS",
+      "witness_evaluator": "PASS"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "OFFCONTEXT_ERROR",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0024",
+          "requirement": 1,
+          "result": "ERROR"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=Q;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=Q",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "FAIL"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=A;temperature=cold;resource=Q",
+      "task_id": "NEW4_AND:OFFCONTEXT_ERROR:000"
+    },
+    "witness": {
+      "config_id": "S0_0",
+      "context": "mode=A;temperature=cold;resource=Q",
+      "record_ids": [
+        "R0000",
+        "R0001",
+        "R0003"
+      ]
+    }
+  },
+  "TARGET_CONFLICT": {
+    "gold": "ERROR",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "ERROR",
+      "optimistic_pool": "PASS",
+      "relational_reference": "ERROR",
+      "witness_evaluator": "ERROR"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "TARGET_CONFLICT",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0024",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=room;resource=P",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=room;resource=P;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=C;temperature=room;resource=P",
+      "task_id": "NEW4_AND:TARGET_CONFLICT:000"
+    },
+    "witness": null
+  },
+  "TARGET_ERROR": {
+    "gold": "ERROR",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "ERROR",
+      "optimistic_pool": "PASS",
+      "relational_reference": "ERROR",
+      "witness_evaluator": "ERROR"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "TARGET_ERROR",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0024",
+          "requirement": 2,
+          "result": "ERROR"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=B;temperature=room;resource=Q",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=B;temperature=room;resource=Q;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=B;temperature=room;resource=Q",
+      "task_id": "NEW4_AND:TARGET_ERROR:000"
+    },
+    "witness": null
+  },
+  "UNKNOWN_GAP": {
+    "gold": "UNKNOWN",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "FAIL",
+      "optimistic_pool": "PASS",
+      "relational_reference": "UNKNOWN",
+      "witness_evaluator": "UNKNOWN"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "UNKNOWN_GAP",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=P",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=P",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=P",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=P",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=P",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=P",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=P",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=P",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=A;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=A;temperature=cold;resource=P",
+      "task_id": "NEW4_AND:UNKNOWN_GAP:000"
+    },
+    "witness": null
+  },
+  "VALID_OR_ROUTE": {
+    "gold": "PASS",
+    "predictions": {
+      "config_only_conservative": "ERROR",
+      "context_only_conservative": "ERROR",
+      "missing_as_fail": "PASS",
+      "optimistic_pool": "PASS",
+      "relational_reference": "PASS",
+      "witness_evaluator": "PASS"
+    },
+    "task": {
+      "configs": [
+        "S0_0",
+        "S0_1",
+        "S0_2"
+      ],
+      "family": "VALID_OR_ROUTE",
+      "formula": [
+        "AND",
+        0,
+        1,
+        [
+          "OR",
+          2,
+          3
+        ]
+      ],
+      "formula_name": "NEW4_AND",
+      "records": [
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0003",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0022",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0013",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0023",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0008",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0000",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0021",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0007",
+          "requirement": 3,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0017",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0018",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0005",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0012",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0004",
+          "requirement": 0,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0015",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0014",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0001",
+          "requirement": 1,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0010",
+          "requirement": 2,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0019",
+          "requirement": 3,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_0",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0002",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0006",
+          "requirement": 2,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0020",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_1",
+          "context": "mode=C;temperature=cold;resource=P;different_test_setting=yes",
+          "record_id": "R0016",
+          "requirement": 0,
+          "result": "PASS"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0009",
+          "requirement": 1,
+          "result": "FAIL"
+        },
+        {
+          "config_id": "S0_2",
+          "context": "mode=C;temperature=cold;resource=P",
+          "record_id": "R0011",
+          "requirement": 3,
+          "result": "PASS"
+        }
+      ],
+      "replicate": 0,
+      "requirements": 4,
+      "target_context": "mode=C;temperature=cold;resource=P",
+      "task_id": "NEW4_AND:VALID_OR_ROUTE:000"
+    },
+    "witness": {
+      "config_id": "S0_0",
+      "context": "mode=C;temperature=cold;resource=P",
+      "record_ids": [
+        "R0000",
+        "R0001",
+        "R0002"
+      ]
+    }
+  }
+}

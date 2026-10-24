@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fab-evidence-audit"
+version = "0.1.1"
+description = "Audit fixed-context functional evidence and return supporting records"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Kento Sasano"}]
+dependencies = []
+keywords = ["evidence", "provenance", "verification", "benchmark"]
+
+[project.urls]
+Repository = "https://github.com/ken-sasa/fab-evidence-audit"
+Documentation = "https://github.com/ken-sasa/fab-evidence-audit/tree/main/software/docs"
+Issues = "https://github.com/ken-sasa/fab-evidence-audit/issues"
+
+[project.scripts]
+fab-evidence-audit = "fab_evidence_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

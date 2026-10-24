@@ -1,0 +1,13 @@
+formula,sampling,total,false_pass,false_fail,oracle_fail,score_inflated,total_score_gap
+AND2,exhaustive,2500,208,0,1354,560,832
+OR2,exhaustive,2500,0,0,354,0,0
+AND3,exhaustive,62500,7800,0,42390,21408,31200
+OR3,exhaustive,62500,0,0,4890,0,0
+AND_OR3,exhaustive,62500,4080,0,26790,11824,16320
+OR_AND3,exhaustive,62500,1480,0,14290,4688,5920
+AND4,random_with_replacement,8000,1241,0,6107,3452,4964
+OR4,random_with_replacement,8000,0,0,374,0,0
+AND_OR_OR4,random_with_replacement,8000,517,0,2400,1660,2068
+OR_AND_AND4,random_with_replacement,8000,636,0,3063,1952,2544
+NESTED_AND4,random_with_replacement,8000,729,0,3953,2112,2916
+NESTED_OR4,random_with_replacement,8000,179,0,1593,592,716

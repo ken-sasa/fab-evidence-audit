@@ -1,0 +1,1302 @@
+{
+  "audit_code_sha256": "412fec7a7e13af8abff8d279085d2e40b0ff536d4e4dc8508bbf541ee029e1dc",
+  "audit_completed_at_utc": "2026-10-24T03:51:18.309754+00:00",
+  "audit_kind": "post_run_independent_oracle_and_archived_witness_audit",
+  "audited_at_utc": "2026-10-24T03:51:17.438296+00:00",
+  "checks": [
+    {
+      "actual": [
+        "config_only_conservative",
+        "context_only_conservative",
+        "missing_as_fail",
+        "optimistic_pool",
+        "relational_reference",
+        "witness_evaluator"
+      ],
+      "expected": [
+        "config_only_conservative",
+        "context_only_conservative",
+        "missing_as_fail",
+        "optimistic_pool",
+        "relational_reference",
+        "witness_evaluator"
+      ],
+      "name": "method_names_match_summary",
+      "passed": true
+    },
+    {
+      "actual": "45cf324139a12aaa4a11abab3027f0023e87def51dcd8a27f8d363657ddaada7",
+      "expected": "45cf324139a12aaa4a11abab3027f0023e87def51dcd8a27f8d363657ddaada7",
+      "name": "protocol_hash_matches_summary",
+      "passed": true
+    },
+    {
+      "actual": [
+        "engine_context.py",
+        "oracle_context.py",
+        "run_context.py"
+      ],
+      "expected": [
+        "engine_context.py",
+        "oracle_context.py",
+        "run_context.py"
+      ],
+      "name": "source_hash_set",
+      "passed": true
+    },
+    {
+      "actual": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8",
+      "expected": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8",
+      "name": "source_hash:engine_context.py",
+      "passed": true
+    },
+    {
+      "actual": "d6980580e2440b9ff41eb3200e40427ee59daea22496259b0d6fc3d9795c0456",
+      "expected": "d6980580e2440b9ff41eb3200e40427ee59daea22496259b0d6fc3d9795c0456",
+      "name": "source_hash:oracle_context.py",
+      "passed": true
+    },
+    {
+      "actual": "4b0f137d3e7cf4fe9d2647cba371d2a3a642ae0ea84353acea859e803262d2a7",
+      "expected": "4b0f137d3e7cf4fe9d2647cba371d2a3a642ae0ea84353acea859e803262d2a7",
+      "name": "source_hash:run_context.py",
+      "passed": true
+    },
+    {
+      "actual": "c7a89c32e9a3fe6798be6e66bce96e08b16efda9ce2d01e0c0b039afad34fea9",
+      "expected": "c7a89c32e9a3fe6798be6e66bce96e08b16efda9ce2d01e0c0b039afad34fea9",
+      "name": "prior_v01_protocol_hash",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "refinement_explicitly_post_result",
+      "passed": true
+    },
+    {
+      "actual": "727b0723b6024cd7641d98e777effabf601b309e520443ac8a40acecd563b411",
+      "expected": "727b0723b6024cd7641d98e777effabf601b309e520443ac8a40acecd563b411",
+      "name": "prior_v02_protocol_hash",
+      "passed": true
+    },
+    {
+      "actual": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8",
+      "expected": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8",
+      "name": "unchanged_from_initial_v02:engine_context.py",
+      "passed": true
+    },
+    {
+      "actual": "d6980580e2440b9ff41eb3200e40427ee59daea22496259b0d6fc3d9795c0456",
+      "expected": "d6980580e2440b9ff41eb3200e40427ee59daea22496259b0d6fc3d9795c0456",
+      "name": "unchanged_from_initial_v02:oracle_context.py",
+      "passed": true
+    },
+    {
+      "actual": 5120,
+      "expected": 5120,
+      "name": "task_count_expected",
+      "passed": true
+    },
+    {
+      "actual": 5120,
+      "expected": 5120,
+      "name": "task_count_matches_summary",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "prediction_task_keys",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "witness_keys_are_known_tasks",
+      "passed": true
+    },
+    {
+      "actual": 5120,
+      "expected": 5120,
+      "name": "all_gold_labels_independently_recomputed",
+      "passed": true
+    },
+    {
+      "actual": 5120,
+      "expected": 5120,
+      "name": "all_witness_existence_flags_independently_recomputed",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "metadata_and_formula_failures",
+      "passed": true
+    },
+    {
+      "actual": {
+        "ERROR": 1024,
+        "FAIL": 1536,
+        "PASS": 2048,
+        "UNKNOWN": 512
+      },
+      "expected": {
+        "ERROR": 1024,
+        "FAIL": 1536,
+        "PASS": 2048,
+        "UNKNOWN": 512
+      },
+      "name": "gold_counts_match_summary",
+      "passed": true
+    },
+    {
+      "actual": 16,
+      "expected": 16,
+      "name": "formula_count",
+      "passed": true
+    },
+    {
+      "actual": 10,
+      "expected": 10,
+      "name": "family_count",
+      "passed": true
+    },
+    {
+      "actual": [
+        "CLEAN_FAIL",
+        "CLEAN_PASS",
+        "CONTEXT_FALSE",
+        "CROSS_CONFIG",
+        "DUPLICATE_SUPPORT",
+        "OFFCONTEXT_ERROR",
+        "TARGET_CONFLICT",
+        "TARGET_ERROR",
+        "UNKNOWN_GAP",
+        "VALID_OR_ROUTE"
+      ],
+      "expected": [
+        "CLEAN_FAIL",
+        "CLEAN_PASS",
+        "CONTEXT_FALSE",
+        "CROSS_CONFIG",
+        "DUPLICATE_SUPPORT",
+        "OFFCONTEXT_ERROR",
+        "TARGET_CONFLICT",
+        "TARGET_ERROR",
+        "UNKNOWN_GAP",
+        "VALID_OR_ROUTE"
+      ],
+      "name": "family_names",
+      "passed": true
+    },
+    {
+      "actual": [
+        32
+      ],
+      "expected": [
+        32
+      ],
+      "name": "balanced_formula_family_cells",
+      "passed": true
+    },
+    {
+      "actual": 160,
+      "expected": 160,
+      "name": "formula_family_cell_count",
+      "passed": true
+    },
+    {
+      "actual": 2048,
+      "expected": 2048,
+      "name": "saved_witness_count",
+      "passed": true
+    },
+    {
+      "actual": 2048,
+      "expected": 2048,
+      "name": "pass_tasks_have_saved_witness",
+      "passed": true
+    },
+    {
+      "actual": 2048,
+      "expected": 2048,
+      "name": "saved_witness_semantic_validity",
+      "passed": true
+    },
+    {
+      "actual": 5120,
+      "expected": 5120,
+      "name": "recorded_witness_valid_flags",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "metrics:witness_evaluator",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "metrics:relational_reference",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "metrics:config_only_conservative",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "metrics:context_only_conservative",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "metrics:optimistic_pool",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "metrics:missing_as_fail",
+      "passed": true
+    },
+    {
+      "actual": [
+        [
+          "config_only_conservative",
+          "CLEAN_FAIL"
+        ],
+        [
+          "config_only_conservative",
+          "CLEAN_PASS"
+        ],
+        [
+          "config_only_conservative",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "config_only_conservative",
+          "CROSS_CONFIG"
+        ],
+        [
+          "config_only_conservative",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "config_only_conservative",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "config_only_conservative",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "config_only_conservative",
+          "TARGET_ERROR"
+        ],
+        [
+          "config_only_conservative",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "config_only_conservative",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "context_only_conservative",
+          "CLEAN_FAIL"
+        ],
+        [
+          "context_only_conservative",
+          "CLEAN_PASS"
+        ],
+        [
+          "context_only_conservative",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "context_only_conservative",
+          "CROSS_CONFIG"
+        ],
+        [
+          "context_only_conservative",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "context_only_conservative",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "context_only_conservative",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "context_only_conservative",
+          "TARGET_ERROR"
+        ],
+        [
+          "context_only_conservative",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "context_only_conservative",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "missing_as_fail",
+          "CLEAN_FAIL"
+        ],
+        [
+          "missing_as_fail",
+          "CLEAN_PASS"
+        ],
+        [
+          "missing_as_fail",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "missing_as_fail",
+          "CROSS_CONFIG"
+        ],
+        [
+          "missing_as_fail",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "missing_as_fail",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "missing_as_fail",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "missing_as_fail",
+          "TARGET_ERROR"
+        ],
+        [
+          "missing_as_fail",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "missing_as_fail",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "optimistic_pool",
+          "CLEAN_FAIL"
+        ],
+        [
+          "optimistic_pool",
+          "CLEAN_PASS"
+        ],
+        [
+          "optimistic_pool",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "optimistic_pool",
+          "CROSS_CONFIG"
+        ],
+        [
+          "optimistic_pool",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "optimistic_pool",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "optimistic_pool",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "optimistic_pool",
+          "TARGET_ERROR"
+        ],
+        [
+          "optimistic_pool",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "optimistic_pool",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "relational_reference",
+          "CLEAN_FAIL"
+        ],
+        [
+          "relational_reference",
+          "CLEAN_PASS"
+        ],
+        [
+          "relational_reference",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "relational_reference",
+          "CROSS_CONFIG"
+        ],
+        [
+          "relational_reference",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "relational_reference",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "relational_reference",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "relational_reference",
+          "TARGET_ERROR"
+        ],
+        [
+          "relational_reference",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "relational_reference",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "witness_evaluator",
+          "CLEAN_FAIL"
+        ],
+        [
+          "witness_evaluator",
+          "CLEAN_PASS"
+        ],
+        [
+          "witness_evaluator",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "witness_evaluator",
+          "CROSS_CONFIG"
+        ],
+        [
+          "witness_evaluator",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "witness_evaluator",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "witness_evaluator",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "witness_evaluator",
+          "TARGET_ERROR"
+        ],
+        [
+          "witness_evaluator",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "witness_evaluator",
+          "VALID_OR_ROUTE"
+        ]
+      ],
+      "expected": [
+        [
+          "config_only_conservative",
+          "CLEAN_FAIL"
+        ],
+        [
+          "config_only_conservative",
+          "CLEAN_PASS"
+        ],
+        [
+          "config_only_conservative",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "config_only_conservative",
+          "CROSS_CONFIG"
+        ],
+        [
+          "config_only_conservative",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "config_only_conservative",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "config_only_conservative",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "config_only_conservative",
+          "TARGET_ERROR"
+        ],
+        [
+          "config_only_conservative",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "config_only_conservative",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "context_only_conservative",
+          "CLEAN_FAIL"
+        ],
+        [
+          "context_only_conservative",
+          "CLEAN_PASS"
+        ],
+        [
+          "context_only_conservative",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "context_only_conservative",
+          "CROSS_CONFIG"
+        ],
+        [
+          "context_only_conservative",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "context_only_conservative",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "context_only_conservative",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "context_only_conservative",
+          "TARGET_ERROR"
+        ],
+        [
+          "context_only_conservative",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "context_only_conservative",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "missing_as_fail",
+          "CLEAN_FAIL"
+        ],
+        [
+          "missing_as_fail",
+          "CLEAN_PASS"
+        ],
+        [
+          "missing_as_fail",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "missing_as_fail",
+          "CROSS_CONFIG"
+        ],
+        [
+          "missing_as_fail",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "missing_as_fail",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "missing_as_fail",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "missing_as_fail",
+          "TARGET_ERROR"
+        ],
+        [
+          "missing_as_fail",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "missing_as_fail",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "optimistic_pool",
+          "CLEAN_FAIL"
+        ],
+        [
+          "optimistic_pool",
+          "CLEAN_PASS"
+        ],
+        [
+          "optimistic_pool",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "optimistic_pool",
+          "CROSS_CONFIG"
+        ],
+        [
+          "optimistic_pool",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "optimistic_pool",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "optimistic_pool",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "optimistic_pool",
+          "TARGET_ERROR"
+        ],
+        [
+          "optimistic_pool",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "optimistic_pool",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "relational_reference",
+          "CLEAN_FAIL"
+        ],
+        [
+          "relational_reference",
+          "CLEAN_PASS"
+        ],
+        [
+          "relational_reference",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "relational_reference",
+          "CROSS_CONFIG"
+        ],
+        [
+          "relational_reference",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "relational_reference",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "relational_reference",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "relational_reference",
+          "TARGET_ERROR"
+        ],
+        [
+          "relational_reference",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "relational_reference",
+          "VALID_OR_ROUTE"
+        ],
+        [
+          "witness_evaluator",
+          "CLEAN_FAIL"
+        ],
+        [
+          "witness_evaluator",
+          "CLEAN_PASS"
+        ],
+        [
+          "witness_evaluator",
+          "CONTEXT_FALSE"
+        ],
+        [
+          "witness_evaluator",
+          "CROSS_CONFIG"
+        ],
+        [
+          "witness_evaluator",
+          "DUPLICATE_SUPPORT"
+        ],
+        [
+          "witness_evaluator",
+          "OFFCONTEXT_ERROR"
+        ],
+        [
+          "witness_evaluator",
+          "TARGET_CONFLICT"
+        ],
+        [
+          "witness_evaluator",
+          "TARGET_ERROR"
+        ],
+        [
+          "witness_evaluator",
+          "UNKNOWN_GAP"
+        ],
+        [
+          "witness_evaluator",
+          "VALID_OR_ROUTE"
+        ]
+      ],
+      "name": "family_metric_keys",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/CLEAN_PASS",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/CLEAN_PASS",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/CLEAN_PASS",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/CLEAN_PASS",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/CLEAN_PASS",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/CLEAN_PASS",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/CLEAN_FAIL",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/CLEAN_FAIL",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/CLEAN_FAIL",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/CLEAN_FAIL",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/CLEAN_FAIL",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/CLEAN_FAIL",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/UNKNOWN_GAP",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/UNKNOWN_GAP",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/UNKNOWN_GAP",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/UNKNOWN_GAP",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/UNKNOWN_GAP",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/UNKNOWN_GAP",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/CROSS_CONFIG",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/CROSS_CONFIG",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/CROSS_CONFIG",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/CROSS_CONFIG",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/CROSS_CONFIG",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/CROSS_CONFIG",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/CONTEXT_FALSE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/CONTEXT_FALSE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/CONTEXT_FALSE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/CONTEXT_FALSE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/CONTEXT_FALSE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/CONTEXT_FALSE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/TARGET_CONFLICT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/TARGET_CONFLICT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/TARGET_CONFLICT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/TARGET_CONFLICT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/TARGET_CONFLICT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/TARGET_CONFLICT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/TARGET_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/TARGET_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/TARGET_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/TARGET_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/TARGET_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/TARGET_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/OFFCONTEXT_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/OFFCONTEXT_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/OFFCONTEXT_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/OFFCONTEXT_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/OFFCONTEXT_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/OFFCONTEXT_ERROR",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/VALID_OR_ROUTE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/VALID_OR_ROUTE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/VALID_OR_ROUTE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/VALID_OR_ROUTE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/VALID_OR_ROUTE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/VALID_OR_ROUTE",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:witness_evaluator/DUPLICATE_SUPPORT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:relational_reference/DUPLICATE_SUPPORT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:config_only_conservative/DUPLICATE_SUPPORT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:context_only_conservative/DUPLICATE_SUPPORT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:optimistic_pool/DUPLICATE_SUPPORT",
+      "passed": true
+    },
+    {
+      "actual": {},
+      "expected": {},
+      "name": "family_metrics:missing_as_fail/DUPLICATE_SUPPORT",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "confusion_matches_recount",
+      "passed": true
+    },
+    {
+      "actual": 5120,
+      "expected": 5120,
+      "name": "independent_oracle_agreement:witness_evaluator",
+      "passed": true
+    },
+    {
+      "actual": 5120,
+      "expected": 5120,
+      "name": "independent_oracle_agreement:relational_reference",
+      "passed": true
+    },
+    {
+      "actual": {
+        "confusion.csv": "cf1f4aae04f1cf0cd9a597772bfa87ff23d7031d6d4e103a099a4f2b40b46cc9",
+        "predictions.csv.gz": "6bbb7db026de2d42222072c8e7bd2934237946f7867f538c685d32c5481ec51d",
+        "protocol_frozen.json": "45cf324139a12aaa4a11abab3027f0023e87def51dcd8a27f8d363657ddaada7",
+        "summary.json": "c719fe337bc2804b5166536180d5bafbb7b8c01400f14c0f0d5064bb986460a0",
+        "tasks.jsonl.gz": "3f37fa4bfd56fdbc2603809eee2540baee5df45c6694c2731c6fa01273cc2e63",
+        "witnesses.jsonl": "c6f4b2e77f38a1ec9342e70c12be5f7383061b9c31d7d5d925e601445c6aaace"
+      },
+      "expected": {
+        "confusion.csv": "cf1f4aae04f1cf0cd9a597772bfa87ff23d7031d6d4e103a099a4f2b40b46cc9",
+        "predictions.csv.gz": "6bbb7db026de2d42222072c8e7bd2934237946f7867f538c685d32c5481ec51d",
+        "protocol_frozen.json": "45cf324139a12aaa4a11abab3027f0023e87def51dcd8a27f8d363657ddaada7",
+        "summary.json": "c719fe337bc2804b5166536180d5bafbb7b8c01400f14c0f0d5064bb986460a0",
+        "tasks.jsonl.gz": "3f37fa4bfd56fdbc2603809eee2540baee5df45c6694c2731c6fa01273cc2e63",
+        "witnesses.jsonl": "c6f4b2e77f38a1ec9342e70c12be5f7383061b9c31d7d5d925e601445c6aaace"
+      },
+      "name": "archived_inputs_unchanged_during_audit",
+      "passed": true
+    }
+  ],
+  "failure_examples": {},
+  "independently_recomputed": {
+    "family_counts": {
+      "CLEAN_FAIL": 512,
+      "CLEAN_PASS": 512,
+      "CONTEXT_FALSE": 512,
+      "CROSS_CONFIG": 512,
+      "DUPLICATE_SUPPORT": 512,
+      "OFFCONTEXT_ERROR": 512,
+      "TARGET_CONFLICT": 512,
+      "TARGET_ERROR": 512,
+      "UNKNOWN_GAP": 512,
+      "VALID_OR_ROUTE": 512
+    },
+    "formula_counts": {
+      "NEW4_AND": 320,
+      "NEW4_OR": 320,
+      "NEW5_1": 320,
+      "NEW5_2": 320,
+      "NEW5_3": 320,
+      "NEW5_4": 320,
+      "NEW5_5": 320,
+      "NEW5_6": 320,
+      "NEW6_1": 320,
+      "NEW6_2": 320,
+      "NEW6_3": 320,
+      "NEW6_4": 320,
+      "NEW6_5": 320,
+      "NEW6_6": 320,
+      "NEW6_7": 320,
+      "REPEAT4": 320
+    },
+    "gold_counts": {
+      "ERROR": 1024,
+      "FAIL": 1536,
+      "PASS": 2048,
+      "UNKNOWN": 512
+    },
+    "metrics": {
+      "config_only_conservative": {
+        "correct": 3584,
+        "excess_error": 1536,
+        "false_pass": 0,
+        "masked_error": 0,
+        "missed_pass": 512,
+        "total": 5120,
+        "unknown_forced_fail": 0,
+        "unsupported_pass": 0
+      },
+      "context_only_conservative": {
+        "correct": 2048,
+        "excess_error": 3017,
+        "false_pass": 0,
+        "masked_error": 0,
+        "missed_pass": 2048,
+        "total": 5120,
+        "unknown_forced_fail": 55,
+        "unsupported_pass": 0
+      },
+      "missing_as_fail": {
+        "correct": 4608,
+        "excess_error": 0,
+        "false_pass": 0,
+        "masked_error": 0,
+        "missed_pass": 0,
+        "total": 5120,
+        "unknown_forced_fail": 512,
+        "unsupported_pass": 0
+      },
+      "optimistic_pool": {
+        "correct": 2560,
+        "excess_error": 0,
+        "false_pass": 1024,
+        "masked_error": 1024,
+        "missed_pass": 0,
+        "total": 5120,
+        "unknown_forced_fail": 0,
+        "unsupported_pass": 512
+      },
+      "relational_reference": {
+        "correct": 5120,
+        "excess_error": 0,
+        "false_pass": 0,
+        "masked_error": 0,
+        "missed_pass": 0,
+        "total": 5120,
+        "unknown_forced_fail": 0,
+        "unsupported_pass": 0
+      },
+      "witness_evaluator": {
+        "correct": 5120,
+        "excess_error": 0,
+        "false_pass": 0,
+        "masked_error": 0,
+        "missed_pass": 0,
+        "total": 5120,
+        "unknown_forced_fail": 0,
+        "unsupported_pass": 0
+      }
+    },
+    "oracle_gold_agreement": 5120,
+    "task_count": 5120,
+    "valid_saved_positive_witnesses": 2048,
+    "witness_existence_flag_agreement": 5120
+  },
+  "limitations": [
+    "These constructed development tasks are not independent real-world observations or an outcome-blind confirmatory holdout.",
+    "Archived predictions for comparator methods are recounted, not regenerated by their implementations.",
+    "Unarchived metamorphic variants are not independently rerun; their summary values are reported only.",
+    "This is a post-run audit, not a new experiment or registered FAB production certification."
+  ],
+  "original_reported_property_total": 27648,
+  "reported_only_metamorphic_checks_not_reexecuted": {
+    "duplicate_invariance": {
+      "passed": 5120,
+      "total": 5120
+    },
+    "offcontext_invariance": {
+      "passed": 5120,
+      "total": 5120
+    },
+    "record_id_renaming": {
+      "passed": 5120,
+      "total": 5120
+    },
+    "row_config_order": {
+      "passed": 5120,
+      "total": 5120
+    }
+  },
+  "reported_only_metamorphic_total": 20480,
+  "scope": [
+    "Count archived tasks and prediction columns without importing the production evaluator.",
+    "Recompute each gold label and positive-witness existence using the independent completion oracle.",
+    "Check each saved witness against actual record IDs, one configuration, the target context, consistent PASS evidence and Boolean satisfaction.",
+    "Verify source hashes, protocol history links, confusion counts and summary counts."
+  ],
+  "source_sha256": {
+    "confusion.csv": "cf1f4aae04f1cf0cd9a597772bfa87ff23d7031d6d4e103a099a4f2b40b46cc9",
+    "predictions.csv.gz": "6bbb7db026de2d42222072c8e7bd2934237946f7867f538c685d32c5481ec51d",
+    "protocol_frozen.json": "45cf324139a12aaa4a11abab3027f0023e87def51dcd8a27f8d363657ddaada7",
+    "summary.json": "c719fe337bc2804b5166536180d5bafbb7b8c01400f14c0f0d5064bb986460a0",
+    "tasks.jsonl.gz": "3f37fa4bfd56fdbc2603809eee2540baee5df45c6694c2731c6fa01273cc2e63",
+    "witnesses.jsonl": "c6f4b2e77f38a1ec9342e70c12be5f7383061b9c31d7d5d925e601445c6aaace"
+  },
+  "status": "PASS"
+}

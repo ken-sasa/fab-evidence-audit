@@ -1,0 +1,139 @@
+{
+  "checked_date_jst": "2026-10-24",
+  "references": [
+    {
+      "authors": "Miguel Couceiro; Jean-Luc Marichal",
+      "title": "Characterizations of discrete Sugeno integrals as polynomial functions over distributive lattices",
+      "year": 2010,
+      "journal": "Fuzzy Sets and Systems 161(5), 694-707",
+      "url": "https://arxiv.org/abs/0808.2619",
+      "used_content": "Primary-source abstract and publication metadata. Lattice polynomial and min/max aggregation are established work."
+    },
+    {
+      "authors": "Jean-Luc Marichal; Radko Mesiar",
+      "title": "Meaningful aggregation functions mapping ordinal scales into an ordinal scale: a state of the art",
+      "year": 2009,
+      "journal": "Aequationes mathematicae 77, 207-236",
+      "doi": "10.1007/s00010-009-2961-2",
+      "url": "https://link.springer.com/article/10.1007/s00010-009-2961-2",
+      "used_content": "Publisher summary and bibliographic metadata, not subscription full text. Ordinal aggregation literature already covers min/max polynomial functions."
+    },
+    {
+      "author": "NASA",
+      "title": "Systems Engineering Handbook, 5.3 Product Verification",
+      "url": "https://www.nasa.gov/reference/5-3-product-verification/",
+      "used_content": "Primary official web text, configuration baseline, requirement traceability and end-to-end verification."
+    },
+    {
+      "author": "Okayama University",
+      "title": "Natural-sciences ethics-review pre-check flow",
+      "url": "https://www.ethics.orsd.okayama-u.ac.jp/pdf/gnst_flow.pdf",
+      "used_content": "Non-human/non-human-data branch says no application necessary; not a case-specific official determination."
+    },
+    {
+      "authors": "Timothy Lebo; Satya Sahoo; Deborah McGuinness editors",
+      "title": "PROV-O The PROV Ontology",
+      "year": 2013,
+      "url": "https://www.w3.org/TR/prov-o/",
+      "used_content": "Official W3C provenance specification. Source/context attributes and qualification are established mechanisms."
+    },
+    {
+      "authors": "Todd J Green; Grigoris Karvounarakis; Val Tannen",
+      "title": "Provenance semirings",
+      "year": 2007,
+      "journal": "PODS 31-40",
+      "doi": "10.1145/1265530.1265535",
+      "url": "https://www.cs.ucdavis.edu/~green/papers/pods07.pdf",
+      "used_content": "Primary author-hosted paper. Annotated relations, provenance algebra and possible-world evaluation are established foundations."
+    },
+    {
+      "author": "SQLite Project",
+      "title": "PRAGMA Statements",
+      "url": "https://www.sqlite.org/pragma.html#pragma_foreign_keys",
+      "sections": [
+        "foreign_keys",
+        "ignore_check_constraints",
+        "general PRAGMA behavior"
+      ],
+      "accessed_jst": "2026-10-24",
+      "page_updated_utc": "2026-10-04 10:38:19",
+      "used_contract": "Foreign-key setting changes during a pending transaction have no effect; CHECK enforcement can be disabled independently. Unknown PRAGMA names can be silently ignored, so readbacks and behavioral probes are required.",
+      "access_route": "Official web text, no byte-identical snapshot archived"
+    },
+    {
+      "author": "SQLite Project",
+      "title": "SQLite Foreign Key Support",
+      "url": "https://www.sqlite.org/foreignkeys.html#fk_enable",
+      "sections": [
+        "2 Enabling Foreign Key Support"
+      ],
+      "accessed_jst": "2026-10-24",
+      "used_contract": "Foreign-key enforcement depends on build support and connection settings; explicit settings and readbacks avoid dependence on defaults.",
+      "access_route": "Official web text"
+    },
+    {
+      "author": "SQLite Project",
+      "title": "CREATE TABLE",
+      "url": "https://www.sqlite.org/lang_createtable.html",
+      "sections": [
+        "3.6 UNIQUE constraints",
+        "3.7 CHECK constraints",
+        "4 Constraint enforcement"
+      ],
+      "accessed_jst": "2026-10-24",
+      "used_contract": "Non-null duplicate UNIQUE values and zero-valued CHECK expressions violate constraints when enforcement applies. Each probe changes only the field relevant to one constraint.",
+      "access_route": "Official web text"
+    },
+    {
+      "author": "SQLite Project",
+      "title": "Result and Error Codes",
+      "url": "https://www.sqlite.org/rescode.html",
+      "sections": [
+        "SQLITE_CONSTRAINT_CHECK",
+        "SQLITE_CONSTRAINT_FOREIGNKEY",
+        "SQLITE_CONSTRAINT_UNIQUE"
+      ],
+      "accessed_jst": "2026-10-24",
+      "used_contract": "Extended constraint codes distinguish the expected rejection from an unrelated error.",
+      "access_route": "Official web text"
+    },
+    {
+      "author": "Python Software Foundation",
+      "title": "Python 3.12 decimal documentation",
+      "url": "https://docs.python.org/3.12/library/decimal.html",
+      "accessed_jst": "2026-10-24",
+      "sections": [
+        "Contexts",
+        "to_integral_value",
+        "Inexact",
+        "ROUND_HALF_EVEN",
+        "ROUND_HALF_UP"
+      ],
+      "used_contract": "Explicit contexts govern precision, rounding and traps. Flags persist until cleared. to_integral_value does not signal Inexact or Rounded. Expected documented behavior informed purposive selection, not outcome blindness."
+    },
+    {
+      "author": "Python Software Foundation",
+      "title": "CPython pure Python decimal implementation",
+      "url": "https://github.com/python/cpython/blob/3.12/Lib/_pydecimal.py",
+      "accessed_jst": "2026-10-24",
+      "used_contract": "Separate stdlib Python arithmetic backend for paired reference execution; static inspection motivated recording Rounded differences after trapped Inexact rather than requiring flag equality. Runtime module and version are recorded separately from mutable branch contents."
+    },
+    {
+      "authors": "Peter Sefton; Stian Soiland-Reyes; Eli Chadwick, editors",
+      "title": "RO-Crate Metadata Specification1.3",
+      "year": 2026,
+      "url": "https://www.researchobject.org/ro-crate/specification/1.3/index.html",
+      "doi": "10.5281/zenodo.20720080",
+      "used_content": "Primarycurrentrecommendation, packagingresearchobjectsandcontextualmetadata;notimplementedcomparison"
+    },
+    {
+      "author": "Anton Sokolov",
+      "title": "MIRROR: Local Evidence Bundles for Reproducible Research Software Review, with a JANUS Case Study",
+      "year": 2026,
+      "url": "https://openresearchsoftware.metajnl.com/articles/10.5334/jors.753",
+      "doi": "10.5334/jors.753",
+      "used_content": "Primaryarticle,descriptivescopecomparisononly;noperformanceevaluation"
+    }
+  ],
+  "novelty_status": "Focused positioning with a purposive official-document SQLite executable case, not a systematic novelty review. No novel grouping, logic or provenance theory or superiority to correct SQL processing is claimed."
+}

@@ -1,0 +1,62 @@
+2026-10-24 v0.1
+Created fixed-expression four-state development pilot. Kept 63504 single-system
+and 303000 cross-system threshold cases, frozen source hashes and independent
+count/integrity audit. These are constructed-case counts, not real-world rates.
+
+2026-10-24 v0.2 initial
+Added fixed-target-context evidence records, three configurations, sixteen
+normalized new formula structures, witnesses, six comparison implementations,
+and 5120 constructed tasks. Both correct implementations matched the oracle.
+Uniform off-context positive evidence made one fault contrast constant PASS.
+
+2026-10-24 v0.2 refined
+After the initial extension's outputs were accessed, refined clean controls to
+keep off-context records consistent and isolate intended context contamination.
+Initial code and outputs retained. Engines and oracle unchanged. Protocol labels
+the redesign as exploratory and links previous protocol hashes. Refined source,
+tasks, predictions, witnesses, summaries and independent audit are archived.
+Created an English manuscript and updated the Japanese progress report.
+
+No main-study protocol was amended, no human data were collected, no external
+registration was created, and no journal submission was performed in these runs.
+
+2026-10-24 v0.3 SQLite executable case study
+- Selected official public contracts before SQL outcome access; frozen local
+  protocol and source hashes, not public preregistration.
+- No post-outcome source or protocol changes in the SQLite run.
+- 4 recipes x2 application phases x3 isolated constraint probes=24 measured
+  cells; actual readbacks, schema hashes, normal controls and SQL traces kept.
+- 120 complete queries +8 derived withholding controls, reusing2 hidden cells.
+- Added executed relational SQL baseline; all3 correct methods match128/128.
+- Separate same-runtime probe program matches all24 cells; all72PASS witnesses
+  valid. Raw-data audit2646/2646 atomic assertions passed (not independent n).
+- Updated English manuscript and Japanese report. v0.2 manuscript archived.
+- No participant/personal data, main-study amendments, external registration
+  or journal submission. One SQLite build; no general superiority claim.
+
+2026-10-24 v0.4 decimal and software resource preparation
+- Frozen official-document design before candidate arithmetic execution.
+- Retained24measuredcells,128dependentqueries;gold69PASS/56FAIL/3UNKNOWN.
+- C and separately authored _pydecimal requirementstates24/24match;6Rounded
+  flag differences retained under a rule fixed by prior source inspection.
+- Independent raw-telemetry audit2396/2396atomicchecks;69validPASSwitnesses.
+- Prepared FAB Evidence Audit0.1.0 installable API/CLI/schema/examples/MIT.
+  Core remains byte-identical to originalv0.2; public validator adds bounds.
+- Isolatedwheel40testsPASS,5376archived-task replays matchcompletionoracle.
+- Rewrote English manuscript into JORS Software Metapaper structure;
+  archived previous manuscripts, kept all old experiments unchanged.
+- Publicrepository,publicarchive/PID,and author-confirmeddeclarations
+  remain pending. No submission,publicrelease,main-study changes,human data.
+
+2026-10-24 software0.1.1 mock-review revision
+- AI simulation from editorial/method/software perspectives; no external review.
+- Fixed conservative witness-expansion/pruning budget and Unicode CLI output.
+- Preserved core and original experiment sources/results; added13targetedtests.
+- Installed finalwheel53testsPASS;5376dependentarchivedqueriesmatchoracle.
+- Recovered0.1.0frozenAPI from its retainedsdist in a fresh historical copy;
+  9sourcehashesmatch and2396decimalraw-record audit assertionsPASS.
+- Clarified reuseexample, fourstatepolicy, witnesssufficiency, nonhuman
+  independence, softwarevsvalidationarchive and reproductioncommands.
+- RevisedJORSmanuscript13passages and preparedJapanese mock-review response.
+- Publicrepository/PID and author-confirmed declarations remainpending.
+  No new measurements, publicrelease, submission, spend or mainstudy amendment.

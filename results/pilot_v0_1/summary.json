@@ -1,0 +1,194 @@
+{
+  "completed_at_utc": "2026-10-24T03:30:11.355253+00:00",
+  "cross_system_by_formula": [
+    {
+      "false_fail": 0,
+      "false_pass": 208,
+      "formula": "AND2",
+      "oracle_fail": 1354,
+      "sampling": "exhaustive",
+      "score_inflated": 560,
+      "total": 2500,
+      "total_score_gap": 832
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 0,
+      "formula": "OR2",
+      "oracle_fail": 354,
+      "sampling": "exhaustive",
+      "score_inflated": 0,
+      "total": 2500,
+      "total_score_gap": 0
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 7800,
+      "formula": "AND3",
+      "oracle_fail": 42390,
+      "sampling": "exhaustive",
+      "score_inflated": 21408,
+      "total": 62500,
+      "total_score_gap": 31200
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 0,
+      "formula": "OR3",
+      "oracle_fail": 4890,
+      "sampling": "exhaustive",
+      "score_inflated": 0,
+      "total": 62500,
+      "total_score_gap": 0
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 4080,
+      "formula": "AND_OR3",
+      "oracle_fail": 26790,
+      "sampling": "exhaustive",
+      "score_inflated": 11824,
+      "total": 62500,
+      "total_score_gap": 16320
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 1480,
+      "formula": "OR_AND3",
+      "oracle_fail": 14290,
+      "sampling": "exhaustive",
+      "score_inflated": 4688,
+      "total": 62500,
+      "total_score_gap": 5920
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 1241,
+      "formula": "AND4",
+      "oracle_fail": 6107,
+      "sampling": "random_with_replacement",
+      "score_inflated": 3452,
+      "total": 8000,
+      "total_score_gap": 4964
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 0,
+      "formula": "OR4",
+      "oracle_fail": 374,
+      "sampling": "random_with_replacement",
+      "score_inflated": 0,
+      "total": 8000,
+      "total_score_gap": 0
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 517,
+      "formula": "AND_OR_OR4",
+      "oracle_fail": 2400,
+      "sampling": "random_with_replacement",
+      "score_inflated": 1660,
+      "total": 8000,
+      "total_score_gap": 2068
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 636,
+      "formula": "OR_AND_AND4",
+      "oracle_fail": 3063,
+      "sampling": "random_with_replacement",
+      "score_inflated": 1952,
+      "total": 8000,
+      "total_score_gap": 2544
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 729,
+      "formula": "NESTED_AND4",
+      "oracle_fail": 3953,
+      "sampling": "random_with_replacement",
+      "score_inflated": 2112,
+      "total": 8000,
+      "total_score_gap": 2916
+    },
+    {
+      "false_fail": 0,
+      "false_pass": 179,
+      "formula": "NESTED_OR4",
+      "oracle_fail": 1593,
+      "sampling": "random_with_replacement",
+      "score_inflated": 592,
+      "total": 8000,
+      "total_score_gap": 716
+    }
+  ],
+  "cross_system_metrics": {
+    "false_fail": 0,
+    "false_pass": 16870,
+    "oracle_fail": 107558,
+    "score_inflated": 48248,
+    "total": 303000,
+    "total_score_gap": 67480
+  },
+  "cross_system_threshold_cases": 303000,
+  "environment": {
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "exhaustive_cross_threshold_cases": 255000,
+  "interpretation": "Development verification only; no real technology performance, clinical, human or novelty claims.",
+  "protocol_sha256": "c7a89c32e9a3fe6798be6e66bce96e08b16efda9ce2d01e0c0b039afad34fea9",
+  "random_cross_threshold_cases": 48000,
+  "single_system_cases": 63504,
+  "single_system_metrics": {
+    "mean_aggregation": {
+      "correct": 21256,
+      "false_fail": 5927,
+      "false_pass": 1617,
+      "fully_known_mismatches": 4174,
+      "fully_known_total": 17200,
+      "gold_ERROR": 28656,
+      "gold_FAIL": 14400,
+      "gold_PASS": 14400,
+      "gold_UNKNOWN": 6048,
+      "masked_error": 28656,
+      "total": 63504,
+      "unknown_forced_decision": 6048,
+      "unsupported_pass": 1250
+    },
+    "short_circuit": {
+      "correct": 46904,
+      "fully_known_mismatches": 0,
+      "fully_known_total": 17200,
+      "gold_ERROR": 28656,
+      "gold_FAIL": 14400,
+      "gold_PASS": 14400,
+      "gold_UNKNOWN": 6048,
+      "masked_error": 16600,
+      "total": 63504
+    },
+    "strict_four_state": {
+      "correct": 63504,
+      "fully_known_mismatches": 0,
+      "fully_known_total": 17200,
+      "gold_ERROR": 28656,
+      "gold_FAIL": 14400,
+      "gold_PASS": 14400,
+      "gold_UNKNOWN": 6048,
+      "total": 63504
+    },
+    "zero_imputation": {
+      "correct": 28800,
+      "fully_known_mismatches": 0,
+      "fully_known_total": 17200,
+      "gold_ERROR": 28656,
+      "gold_FAIL": 14400,
+      "gold_PASS": 14400,
+      "gold_UNKNOWN": 6048,
+      "masked_error": 28656,
+      "total": 63504,
+      "unknown_forced_decision": 6048
+    }
+  },
+  "study_id": "FAB-LOGIC-PILOT-20261024"
+}

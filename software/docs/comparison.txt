@@ -1,0 +1,35 @@
+RELATED SOFTWARE AND SCOPE
+Checked 2026-10-24
+
+The package evaluates a declared finite AND/OR evidence query after filtering
+configuration and target context. Its support witness follows a task-wide
+active-target-cell integrity audit. A witness alone does not certify absence
+of conflicts elsewhere, source authenticity or physical feasibility.
+
+Python and executed SQL relational controls implement the same contract.
+Both agree on the archived SQLite and decimal queries. The package offers
+a documented API/CLI, validation, fixtures and positive support witnesses.
+No speed, correctness, expressiveness or usability advantage over SQL is
+established; SQL can also be extended to return provenance.
+
+W3C PROV-O provides an extensible vocabulary for provenance. Our input schema
+is a specific application contract; no PROV exporter/conformance is claimed.
+https://www.w3.org/TR/prov-o/
+
+Provenance semirings already formalize relational input dependence and
+possible-world reasoning. Our finite evaluator introduces no new algebra.
+https://www.cs.ucdavis.edu/~green/papers/pods07.pdf
+
+RO-Crate packages research objects and contextual metadata. The study ZIP
+is not thereby RO-Crate-compliant. No interoperability was implemented.
+https://www.researchobject.org/ro-crate/specification/1.3/index.html
+
+MIRROR links claims to retained files and checks digests, schemas and selected
+wording. Its described verifier does not evaluate this configuration/context
+functional contract. Local bundles and hashes are established practice, not
+the principal novelty claimed here. No MIRROR performance test was run.
+https://openresearchsoftware.metajnl.com/articles/10.5334/jors.753
+
+These are descriptive scope comparisons with primary documentation, not
+head-to-head feature or performance experiments. The research contribution
+being developed is a reusable task contract, audit corpus and implementation.

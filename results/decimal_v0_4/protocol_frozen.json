@@ -1,0 +1,137 @@
+{
+  "version": "v0.4 decimal executable case",
+  "frozen_at_utc": "2026-10-24T04:49:21.698937+00:00",
+  "source_outcomes_accessed_before_freeze": false,
+  "local_commitment_only": true,
+  "selection": "Purposive official-document contracts outside SQLite and main FAB corpus. Expected documented effects known; not a blinded holdout or external preregistration.",
+  "profiles": {
+    "high_trap": [
+      6,
+      true
+    ],
+    "high_open": [
+      6,
+      false
+    ],
+    "low_trap": [
+      3,
+      true
+    ],
+    "low_open": [
+      3,
+      false
+    ]
+  },
+  "contexts": [
+    "ROUND_HALF_EVEN",
+    "ROUND_HALF_UP"
+  ],
+  "context_attributes": {
+    "Emin": -999,
+    "Emax": 999,
+    "capitals": 1,
+    "clamp": 0,
+    "flags": [],
+    "traps": "only Inexact if declared"
+  },
+  "requirements": {
+    "0": {
+      "operation": "Context.add(Decimal('1.2345'),Decimal('0.0001'))",
+      "control": "1.20+0.03=1.23",
+      "pass": "exact returned value1.2346 and all flags false",
+      "fail": "other finite return or exact Inexact exception; flags retained"
+    },
+    "1": {
+      "operation": "Decimal('2.5').to_integral_value(context=ctx)",
+      "control": "2.to_integral_value=2",
+      "pass": "return3 and allflagsfalse",
+      "fail": "return2 and allflagsfalse"
+    },
+    "2": {
+      "operation": "Context.divide(Decimal('1'),Decimal('3'))",
+      "control": "1/4=0.25",
+      "pass": "exact Inexact exception and Inexact flag",
+      "fail": "finite return with Inexact and Rounded flags"
+    }
+  },
+  "measurement": "Fresh explicit Context per probe, string-created operands, clear flags before control and probe, record all attributes/traps/flags/return tuples/exceptions; control failure, unexpected exception or readback mismatch=ERROR. Expected exception means FAIL for requirement0, PASS for requirement2.",
+  "static_source_refinement_before_outcomes": "Reading _pydecimal showed Inexact may raise before Rounded is flagged. A trapped Inexact does not require Rounded; record backend flag differences without suppressing them. No candidate arithmetic was executed to make this refinement.",
+  "reference": "Separately authored _pydecimal probe code where available; backend identity recorded. Same workflow, not independent human/group replication. Compare states, values, exception type and Inexact flag; other flags descriptive.",
+  "formulas": {
+    "both": [
+      "AND",
+      0,
+      2
+    ],
+    "either": [
+      "OR",
+      0,
+      2
+    ],
+    "both_with_round": [
+      "AND",
+      0,
+      2,
+      1
+    ],
+    "either_with_round": [
+      "AND",
+      [
+        "OR",
+        0,
+        2
+      ],
+      1
+    ]
+  },
+  "query_design": {
+    "complete": "15 nonempty profile subsets x2 contexts x4 formulas=120",
+    "withheld": "high_trap-only x2contexts x4formulas remove requirement2targetrow=8; two unique withheld measuredcells",
+    "unit": "24measured cells from8conditions reused by128dependentqueries; no population inference"
+  },
+  "metrics": [
+    "agreement with completion oracle",
+    "false PASS",
+    "unknown closures",
+    "excess ERROR",
+    "valid support witnesses",
+    "24 paired backend probe states",
+    "all backend flag differences retained"
+  ],
+  "exclusions": "No outcome-based exclusions. Setup failure means incomplete run. Corrections require named amended run; originals retained.",
+  "scope": "Public technical specifications and artificial decimal values, no human/personal/main-study records",
+  "sources": [
+    {
+      "author": "Python Software Foundation",
+      "title": "Python 3.12 decimal documentation",
+      "url": "https://docs.python.org/3.12/library/decimal.html",
+      "accessed_jst": "2026-10-24",
+      "sections": [
+        "Contexts",
+        "to_integral_value",
+        "Inexact",
+        "ROUND_HALF_EVEN",
+        "ROUND_HALF_UP"
+      ],
+      "used_contract": "Explicit contexts govern precision, rounding and traps. Flags persist until cleared. to_integral_value does not signal Inexact or Rounded. Expected documented behavior informed purposive selection, not outcome blindness."
+    },
+    {
+      "author": "Python Software Foundation",
+      "title": "CPython pure Python decimal implementation",
+      "url": "https://github.com/python/cpython/blob/3.12/Lib/_pydecimal.py",
+      "accessed_jst": "2026-10-24",
+      "used_contract": "Separate stdlib Python arithmetic backend for paired reference execution; static inspection motivated recording Rounded differences after trapped Inexact rather than requiring flag equality. Runtime module and version are recorded separately from mutable branch contents."
+    }
+  ],
+  "source_hashes": {
+    "v04_decimal/run_decimal.py": "6f48fd959bdddce2043ad6baf618ed36eddaa7d101f740cbd5a703aaabff94d9",
+    "v04_decimal/decimal_reference.py": "f9712ab7e67bd7ca9c181ae5f520d6d443ad4500d27357478ed0288f0cba3647",
+    "v04_decimal/audit_decimal.py": "6d8e58e7055b18478a09466498f8fc15bd413e79b35e31ab04d31a08342c3540",
+    "v04_decimal/sources.json": "ddbfd849aa4594b22aaea9d0ad892727d197f0776a7f5000c0ddba3060e7fb1e",
+    "v02_refined/engine_context.py": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8",
+    "v02_refined/oracle_context.py": "d6980580e2440b9ff41eb3200e40427ee59daea22496259b0d6fc3d9795c0456",
+    "v03_sqlite/run_sqlite_case.py": "93af411b8d034f6db67eccaf78233b1be51370a01b4e305db716dd013c152d0a",
+    "software/src/fab_evidence_audit/api.py": "525344e1663ea957c1e6776587012a8e9874efa3a290561fe22799862aceeea1",
+    "software/src/fab_evidence_audit/_core.py": "afa263172c2d7a3e3810c342538423716c5eb75239f56d4c51664936b71a82f8"
+  }
+}
