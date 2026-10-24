@@ -65,8 +65,9 @@ registered Doraemon Index main-study protocol.
 
 Code and the included original synthetic fixtures and software observations are
 provided under MIT. Third-party documentation is linked, not redistributed.
-CITATION.cff describes this software. Public archive metadata will identify the
-fixed release separately. No PyPI registry entry is claimed.
+The fixed version 0.1.1 archive is available at https://zenodo.org/records/23612042
+with DOI https://doi.org/10.5281/zenodo.23612042 . CITATION.cff describes this
+numbered software release. No PyPI registry entry is claimed.
 
 Maintainer: Kento Sasano, Okayama University, office@sasano.org.
 Issues may be opened in this repository. No response-time commitment is offered.

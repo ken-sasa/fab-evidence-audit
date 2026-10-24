@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite the numbered software release when a public archive is deposited."
+message: "Cite this numbered software release."
 type: software
 title: "FAB Evidence Audit"
 version: 0.1.1
@@ -9,3 +9,7 @@ authors:
     given-names: Kento
 license: MIT
 abstract: "A bounded reference evaluator for fixed-context functional evidence with explicit uncertainty and support witnesses."
+
+doi: "10.5281/zenodo.23612042"
+date-released: "2026-10-24"
+url: "https://zenodo.org/records/23612042"
